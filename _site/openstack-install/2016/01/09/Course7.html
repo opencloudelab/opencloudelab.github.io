@@ -1,0 +1,599 @@
+<head>
+	<title>Openstack eLab</title>
+	<!--Vendor CSS-->
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+		<!--bootstrap-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		<!-- Modified local css-->
+	<link href="/Assets/CSS/jumbotron.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!--Vendor javascripts-->
+		<!--AngularJS-->
+	<script src="/Vendors/angularJS/angular.min.js"></script>
+	<script src="/Vendors/angularJS/angular-route.js"></script>
+	<script src="/Vendors/angularJS/angular-route.min.js"></script>
+	<script src="/Vendors/angularJS/angular-cookie.js"></script>
+		<!--Jquery-->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    	<!--bootstrap-->
+    		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+	<!--My javascripts-->
+	<script src="/App/app.js"></script>
+	<script src="/App/route.js"></script>
+	<script src="/App/Controllers/homeController.js"></script>
+	<script src="/App/Controllers/loginController.js"></script>
+	<script src="/App/Controllers/headController.js"></script>
+	<script src="/App/Controllers/topicController.js"></script>
+	<script src="/App/Factories/authFactory.js"></script>
+	<script src="/App/Factories/buttonFactory.js"></script>
+	<script type="text/javascript" src="/Assets/JS/animate_progress_bar.js"></script>
+	
+
+</head>
+
+<body>
+
+<div class=container id="post">
+  <a href="/#/"><h1>Go back</h1></a>
+
+	<h1 class="post-title">Course 7 Configuring bridges, VLANS, and interfaces within</h1>
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+	    
+	       <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ua8j-SX1Www" frameborder="0" allowfullscreen></iframe></div>
+
+          <br>
+          <div class="alert alert-info" role="alert">
+              <strong>Let's go!</strong> Run your own hosts.
+          </div>
+
+          <div class="alert alert-success fade in" id="host_create_tip" style="display: none;">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>Host are created successfully!</strong> Login and try them.
+          </div>
+
+          <button type="button" class="btn btn-lg btn-primary" id="create_host">Create your host!</button>
+
+          <p>
+
+          </p>
+
+          <div class="progress" id="progress_class" style="display: none;">
+              <div class="progress-bar progress-bar-striped" id="host_progress_bar2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%"><span class="sr-only">0% Complete</span></div>
+          </div>
+          
+
+          <div id=host_login_tip style="display: none;">
+            
+            <div class="col-md-4">
+              <div class="bs-callout bs-callout-info" id="how_to_login">
+                <h3><i>How to log in your hosts?</i></h3>
+                <p>
+                  Open your terminal, and type:
+                  <code>ssh username@hostIP</code>
+                  <br>And input the password.  
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <table class="table table-condensed" id="host_key">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Host 1</th>
+                    <th>Host 2</th>
+                    <th>host 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>IP</td>
+                    <td>10.241.1.101</td>
+                    <td>10.241.1.102</td>
+                    <td>10.241.1.103</td>
+                  </tr>
+                  <tr>
+                    <td>Username</td>
+                    <td>ubuntu</td>
+                    <td>ubuntu</td>
+                    <td>ubuntu</td>
+                  </tr>
+                  <tr>
+                    <td>Password</td>
+                    <td>oci123</td>
+                    <td>oci123</td>
+                    <td>oci123</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+         
+          </div>
+
+	   	
+
+	
+
+	     
+
+	
+
+	<h4 id="course-7-configuring-bridges-vlans-and-interfaces-within">Course 7: Configuring bridges, VLANS, and interfaces within</h4>
+
+<p>Interface settings - bridges:</p>
+
+<p>Next, you will need to create a series of bridges that allow communication to flow without conflict. For instance, a br-storage bridge can be created so that storage traffic, meaning requests or commands pertaining to cinder, to and from the storage node can be completed along that path. The same is true for each type of service on each node. The storage node’s communications to the infrastructure node may go through the management bridge if the nature of the communication is networking service related. Once you have created each bridge that you will need, you will need to associate the bridges with certain VLANs so that they know what VLANs traffic is allowed on each respective bridge.</p>
+
+<p>To Show all bridges on the network:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>brctl show
+</code></pre>
+</div>
+
+<p>To Activate the Bridge:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>ifup br-mgmt
+</code></pre>
+</div>
+
+<p>To check the status of a specific network construct:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>ip a s br-mgmt
+</code></pre>
+</div>
+
+<p>To check the configuration of all the bridges:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>dsh -g hosts -M <span class="s1">'brctl show'</span> <span class="c"># (Need to be ssh'ed into an Infra Node)</span>
+</code></pre>
+</div>
+
+<p>To ping from Infra node to various bridges:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>ping -I br-storage 10.20.40.3
+</code></pre>
+</div>
+
+<p>The above command pings from the first variable (br-storage) to 10.20.40.3 in order to verify communication. It does this ping along the br-storage bridge�s connections (veths). The source address gets changed to that of the address on br-storage.</p>
+
+<hr />
+
+<p>Configure VLAN on Cisco Nexus Switch (Just for OCI)</p>
+
+<p>You will need to ssh into the cisco switch, check the current VLANs that are created, and create your own VLAN using cisco command : vlan 101. After creating the VLAN, name it using: name br-mgmt, which in this case names it “br-mgmt”.</p>
+
+<p>Next, you will need to check which ports are currently associated with the VLAN (there may not be any), and associate the necessary ports. The series of commands that are required to perform these steps are defined in the tables below.</p>
+
+<p>#####The following table corresponds to the switch ports and the interface designation.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>IP</th>
+      <th>10G</th>
+      <th>Nexus Switch Port</th>
+      <th>Mode</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10.241.1.54</td>
+      <td>eht1</td>
+      <td>Eth1/26</td>
+      <td>trunk</td>
+    </tr>
+    <tr>
+      <td>10.241.1.55</td>
+      <td>eht1</td>
+      <td>Eth1/27</td>
+      <td>trunk</td>
+    </tr>
+    <tr>
+      <td>10.241.1.56</td>
+      <td>eht2</td>
+      <td>Eth1/21</td>
+      <td>trunk</td>
+    </tr>
+    <tr>
+      <td>10.241.1.57</td>
+      <td>eth1</td>
+      <td>Eth1/18</td>
+      <td>trunk</td>
+    </tr>
+    <tr>
+      <td>10.241.1.58</td>
+      <td>eht1</td>
+      <td>Eth1/19</td>
+      <td>trunk</td>
+    </tr>
+    <tr>
+      <td>10.241.1.59</td>
+      <td>eth1</td>
+      <td>Eth1/17</td>
+      <td>trunk</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="this-table-details-the-network-for-all-nodes-and-bridges">This table details the network for all nodes and bridges.</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Storage/Cinder</th>
+      <th>Infra 1</th>
+      <th>Infra 2</th>
+      <th>Infra3</th>
+      <th>Compute</th>
+      <th>Logging/HA Proxy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Server</td>
+      <td>10.241.1.54</td>
+      <td>10.241.1.55</td>
+      <td>10.241.1.56</td>
+      <td>10.241.1.57</td>
+      <td>10.241.1.58</td>
+      <td>10.241.1.59</td>
+    </tr>
+    <tr>
+      <td>Br-mgmt</td>
+      <td>10.20.20.6</td>
+      <td>10.20.20.2</td>
+      <td>10.20.20.3</td>
+      <td>10.20.20.7</td>
+      <td>10.20.20.4</td>
+      <td>10.20.20.5</td>
+    </tr>
+    <tr>
+      <td>Br-vlan</td>
+      <td>10.241.1.54</td>
+      <td>10.241.1.55</td>
+      <td>10.241.1.56</td>
+      <td>10.241.1.57</td>
+      <td>10.241.1.58</td>
+      <td>10.241.1.59</td>
+    </tr>
+    <tr>
+      <td>Br-vxlan</td>
+      <td>10.20.30.6</td>
+      <td>10.20.30.2</td>
+      <td>10.20.30.3</td>
+      <td>10.20.30.7</td>
+      <td>10.20.30.4</td>
+      <td>10.20.30.5</td>
+    </tr>
+    <tr>
+      <td>Br-storage</td>
+      <td>10.20.40.6</td>
+      <td>10.20.40.2</td>
+      <td>10.20.40.3</td>
+      <td>10.20.40.7</td>
+      <td>10.20.40.4</td>
+      <td>10.20.40.5</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>When privileges are elevated, you are allowed to go to a global configuration mode using:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>config t
+</code></pre>
+</div>
+
+<p>Then, use the command $ show vlan to display the current VLANs that are arranged on the switch. The exact sequence and arrangement of steps that follow depend entirely on the current configuration of the switch you are using.</p>
+
+<p>To Delete an existing VLAN:
+<code class="highlighter-rouge">sh
+$ no vlan &amp;lt;vlan-number&amp;gt;
+</code></p>
+
+<p>To create a new VLAN:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>vlan &lt;vlan-number&gt;
+</code></pre>
+</div>
+
+<p>To name the VLAN:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>name &lt;vlan-name&gt;
+</code></pre>
+</div>
+
+<p>To start the VLAN:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>state active
+<span class="gp">$ </span>no shutdown
+</code></pre>
+</div>
+
+<p>To exit from this VLAN:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="nb">exit</span>
+</code></pre>
+</div>
+
+<p>To see interface status:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>show interface brief
+</code></pre>
+</div>
+
+<p>To configure a port to a VLAN you have to enter into that port number using the following:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>interface ethernet &lt;port-number&gt; <span class="c"># (1/20 for example)</span>
+</code></pre>
+</div>
+
+<p>To eliminate the port from VLAN:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>interface ethernet &lt;port-number&gt; <span class="c"># (1/20 for example)</span>
+<span class="gp">$ </span>no switchport mode trunk
+</code></pre>
+</div>
+
+<p>You should set the port to trunk mode in order to have untagged traffic from outside the assigned port. If a port is not under trunk mode, you need to set a port mode using:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>switchport trunk mode
+</code></pre>
+</div>
+
+<p>To see specifications for a particular port number:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>show running-config interface Ethernet &lt;port-number&gt; <span class="c"># (1/20 for example)</span>
+</code></pre>
+</div>
+
+<p>To remove a specific port from an interface:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>no switchport trunk allowed vlan &lt;port-number&gt;
+</code></pre>
+</div>
+
+<p>To add a specific port to the interface:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>switchport trunk allowed vlan &lt;port-number&gt;
+</code></pre>
+</div>
+
+<p>The following is an example of the series of commands that can be run to create a VLAN:</p>
+
+<p>Creation of VLANs:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>vlan 201 <span class="c"># Creates a VLAN with ID 201</span>
+<span class="gp">$ </span>name br-mgmt2 <span class="c"># Renames it br-mgmt2</span>
+<span class="gp">$ </span>state active <span class="c"># This tells the switch to make the VLAN active</span>
+<span class="gp">$ </span>no shutdown <span class="c"># This command tells the switch to turn on the VLAN</span>
+<span class="gp">$ </span><span class="nb">exit</span> <span class="c"># Exits this interface</span>
+
+<span class="gp">$ </span>vlan 202 <span class="c"># Repeats the same process from above</span>
+<span class="gp">$ </span>name br-vxlan2
+<span class="gp">$ </span>state active
+<span class="gp">$ </span>no shutdown
+<span class="gp">$ </span><span class="nb">exit</span>
+
+<span class="gp">$ </span>vlan 203
+<span class="gp">$ </span>name br-storage2
+<span class="gp">$ </span>state active
+<span class="gp">$ </span>no shutdown
+<span class="gp">$ </span><span class="nb">exit</span>
+</code></pre>
+</div>
+
+<p>Check interfaces’ status:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>show interface brief
+</code></pre>
+</div>
+
+<p>If you check the configurations in the cisco switch and find that there are already some VLANs assigned to the naming convention that you used, then you will need to remove some of the ports from your VLANs and add others. The process for doing so is outlined here.</p>
+
+<p>Remove interfaces 17, 19 from all VLANs associated with these ports</p>
+
+<p>Interface 17</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>interface ethernet 1/17
+<span class="gp">$ </span>no switchport mode trunk
+</code></pre>
+</div>
+
+<p>Interface 19</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>interface ethernet 1/19
+<span class="gp">$ </span>no switchport mode trunk
+</code></pre>
+</div>
+
+<p>Associate new VLANs with all of the new physical switch ports (interfaces) connected to your nodes.</p>
+
+<p>Interface 17</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>interface ethernet 1/17
+<span class="c"># Remove unnecessary association of this interface from other VLANs.</span>
+<span class="c"># $ no switchport trunk allowed vlan &lt;VLAN-number&gt;</span>
+<span class="gp">$ </span>show running-config interface Ethernet 1/17
+<span class="c"># If Interface 17 is not in trunk mode</span>
+<span class="c"># $ switchport mode trunk</span>
+<span class="gp">$ </span>switchport trunk allowed vlan 201-203
+<span class="gp">$ </span><span class="nb">exit</span>
+</code></pre>
+</div>
+
+<p>Interface 18</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>interface ethernet 1/18
+<span class="gp">$ </span>show running-config interface Ethernet 1/18
+<span class="gp">$ </span>switchport trunk allowed vlan 201-203
+<span class="gp">$ </span><span class="nb">exit</span>
+</code></pre>
+</div>
+
+<p>Interface 19</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>interface ethernet 1/19
+<span class="gp">$ </span>show running-config interface Ethernet 1/19
+<span class="gp">$ </span>switchport trunk allowed vlan 201-203
+<span class="gp">$ </span><span class="nb">exit</span>
+</code></pre>
+</div>
+
+<p>Interface 21</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>interface ethernet 1/21
+<span class="gp">$ </span>show running-config interface Ethernet 1/21
+<span class="gp">$ </span>switchport mode trunk
+<span class="gp">$ </span>switchport trunk allowed vlan 201-203
+<span class="gp">$ </span><span class="nb">exit</span>
+</code></pre>
+</div>
+
+<p>Interface 26</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>interface ethernet 1/26
+<span class="gp">$ </span>show running-config interface Ethernet 1/26
+<span class="gp">$ </span>switchport mode trunk
+<span class="gp">$ </span>switchport trunk allowed vlan 201-203
+<span class="gp">$ </span><span class="nb">exit</span>
+</code></pre>
+</div>
+
+<p>Interface 27</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>interface ethernet 1/27
+<span class="gp">$ </span>show running-config interface Ethernet 1/27
+<span class="gp">$ </span>switchport mode trunk
+<span class="gp">$ </span>switchport trunk allowed vlan 201-203
+<span class="gp">$ </span><span class="nb">exit</span>
+</code></pre>
+</div>
+
+<p>To make the changes permanent:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>copy running-config starting-config
+</code></pre>
+</div>
+
+<p>To remove an association from VLAN interface</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>brctl delif br-vxlan eth1.102
+</code></pre>
+</div>
+
+<p>To remove a VLAN interface</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>vconfig rem eth1.102
+</code></pre>
+</div>
+
+<p>To bring down a bridge</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>ip link <span class="nb">set </span>br-vxlan down
+</code></pre>
+</div>
+
+<p>To delete a bridge</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>brctl delbr &lt;bridge-name&gt;
+</code></pre>
+</div>
+
+<p>Here is an example of the sequence of commands that can be used to reconfigure your bridges and VLANs:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>brctl delif br-mgmt eth1.101 <span class="c">#deletes the eth1.101 interface from br-mgmt</span>
+<span class="gp">$ </span>vconfig rem eth1.101 <span class="c"># removes the eth1.101 interface</span>
+<span class="gp">$ </span>ip link <span class="nb">set </span>dev br-mgmt down <span class="c"># sets the br-mgmt bridge down</span>
+<span class="gp">$ </span>brctl delbr br-mgmt <span class="c"># deletes the br-mgmt bridge</span>
+<span class="gp">$ </span>brctl delif br-vxlan eth1.102 <span class="c"># deletes eth1.102 interface from br-vxlan</span>
+<span class="gp">$ </span>vconfig rem eth1.102 <span class="c"># removes the eth1.102 interface</span>
+<span class="gp">$ </span>ip link <span class="nb">set </span>dev br-vxlan down <span class="c"># sets the br-vxlan bridge down</span>
+<span class="gp">$ </span>brctl delbr br-vxlan <span class="c"># deletes the br-vxlan bridge</span>
+<span class="gp">$ </span>brctl delif br-storage eth1.103 <span class="c"># similar story as above</span>
+<span class="gp">$ </span>vconfig rem eth1.103
+<span class="gp">$ </span>ip link <span class="nb">set </span>dev br-storage down
+<span class="gp">$ </span>brctl delbr br-storage
+</code></pre>
+</div>
+
+<hr />
+
+
+
+</div>
+</body>

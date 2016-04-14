@@ -1,0 +1,496 @@
+<head>
+	<title>Openstack eLab</title>
+	<!--Vendor CSS-->
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+		<!--bootstrap-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		<!-- Modified local css-->
+	<link href="/Assets/CSS/jumbotron.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!--Vendor javascripts-->
+		<!--AngularJS-->
+	<script src="/Vendors/angularJS/angular.min.js"></script>
+	<script src="/Vendors/angularJS/angular-route.js"></script>
+	<script src="/Vendors/angularJS/angular-route.min.js"></script>
+	<script src="/Vendors/angularJS/angular-cookie.js"></script>
+		<!--Jquery-->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    	<!--bootstrap-->
+    		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+	<!--My javascripts-->
+	<script src="/App/app.js"></script>
+	<script src="/App/route.js"></script>
+	<script src="/App/Controllers/homeController.js"></script>
+	<script src="/App/Controllers/loginController.js"></script>
+	<script src="/App/Controllers/headController.js"></script>
+	<script src="/App/Controllers/topicController.js"></script>
+	<script src="/App/Factories/authFactory.js"></script>
+	<script src="/App/Factories/buttonFactory.js"></script>
+	<script type="text/javascript" src="/Assets/JS/animate_progress_bar.js"></script>
+	
+
+</head>
+
+<body>
+
+<div class=container id="post">
+  <a href="/#/"><h1>Go back</h1></a>
+
+	<h1 class="post-title">Course 5 Configuring the Network</h1>
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+	    
+	       <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Bfopx3nqwuU" frameborder="0" allowfullscreen></iframe></div>
+
+          <br>
+          <div class="alert alert-info" role="alert">
+              <strong>Let's go!</strong> Run your own hosts.
+          </div>
+
+          <div class="alert alert-success fade in" id="host_create_tip" style="display: none;">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>Host are created successfully!</strong> Login and try them.
+          </div>
+
+          <button type="button" class="btn btn-lg btn-primary" id="create_host">Create your host!</button>
+
+          <p>
+
+          </p>
+
+          <div class="progress" id="progress_class" style="display: none;">
+              <div class="progress-bar progress-bar-striped" id="host_progress_bar2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%"><span class="sr-only">0% Complete</span></div>
+          </div>
+          
+
+          <div id=host_login_tip style="display: none;">
+            
+            <div class="col-md-4">
+              <div class="bs-callout bs-callout-info" id="how_to_login">
+                <h3><i>How to log in your hosts?</i></h3>
+                <p>
+                  Open your terminal, and type:
+                  <code>ssh username@hostIP</code>
+                  <br>And input the password.  
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <table class="table table-condensed" id="host_key">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Host 1</th>
+                    <th>Host 2</th>
+                    <th>host 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>IP</td>
+                    <td>10.241.1.101</td>
+                    <td>10.241.1.102</td>
+                    <td>10.241.1.103</td>
+                  </tr>
+                  <tr>
+                    <td>Username</td>
+                    <td>ubuntu</td>
+                    <td>ubuntu</td>
+                    <td>ubuntu</td>
+                  </tr>
+                  <tr>
+                    <td>Password</td>
+                    <td>oci123</td>
+                    <td>oci123</td>
+                    <td>oci123</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+         
+          </div>
+
+	   	
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	<hr />
+
+<h5 id="course-5-configuring-the-network">Course 5: Configuring the Network</h5>
+
+<h6 id="vlan-topology">VLAN Topology</h6>
+
+<p>![alt text][https://github.com/frank-zhangxin/Elab/VLANTopology1]</p>
+
+<p>![alt text][https://github.com/frank-zhangxin/Elab/VLANTopology2]</p>
+
+<hr />
+
+<p>The two topologies above provide a brief overview of what the network should look like. Each node (Storage, HAProxy, Infras, Compute) will need to have certain connections that will allow for communication between it and other nodes. The bridges are labelled as br- and followed by the type of connection. Each bridge connects to the other nodes via their respective bridge connections. The second topology describes the difference between the VLAN bridge and the other 3. In this case the VLAN bridge has no subinterface between it and the external network. This is because the external physical network is not set up to direct that type of traffic.</p>
+
+<p>The network interface settings that were used previously reside here:</p>
+
+<p><a href="https://gist.github.com/Frank-ZhangXin/76a98d7f37c292f98827">https://gist.github.com/Frank-ZhangXin/76a98d7f37c292f98827</a></p>
+
+<p>*NEED to add to OCI github later</p>
+
+<hr />
+
+<h5 id="lab-5-video-instructions">Lab 5 video instructions</h5>
+
+<hr />
+
+<p>In order to define the setting for VLAN, the following is required:</p>
+
+<ol>
+  <li>
+    <p>Netmask</p>
+  </li>
+  <li>
+    <p>Gateway</p>
+  </li>
+  <li>
+    <p>Dns-nameservers</p>
+  </li>
+</ol>
+
+<p>In order to obtain the netmask, use:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>route
+</code></pre>
+</div>
+
+<p>The output to the command above should appear similar to as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kernel IP routing table</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Destination</td>
+      <td>Gateway</td>
+      <td>Genmask</td>
+      <td>Flags</td>
+      <td>Metric</td>
+      <td>Ref</td>
+      <td>Use</td>
+      <td>Iface</td>
+    </tr>
+    <tr>
+      <td>default</td>
+      <td>10.241.254.253</td>
+      <td>0.0.0.0</td>
+      <td>UG</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>eth0</td>
+    </tr>
+    <tr>
+      <td>10.241.0.0</td>
+      <td>*</td>
+      <td>255.255.0.0</td>
+      <td>U</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>eth0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In order to obtain the gateway, use:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>ip r
+</code></pre>
+</div>
+
+<p>The output will appear similar to as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>default</th>
+      <th>via</th>
+      <th>10.241.254.253</th>
+      <th>dev</th>
+      <th>eth0</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10.241.0.0/16</td>
+      <td>dev</td>
+      <td>eth0</td>
+      <td>proto kernel</td>
+      <td>scope link</td>
+      <td>src</td>
+      <td>10.241.1.55</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In order to obtain the dns-nameserver, look into the following file:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>vi /etc/resolv.conf
+</code></pre>
+</div>
+
+<hr />
+
+<h6 id="interface-settings">Interface settings:</h6>
+
+<p>Navigate to “/etc/network/interfaces” and edit it to resemble the file that follows this instruction:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="nb">cd</span> /etc/network/interfaces
+</code></pre>
+</div>
+
+<p>For reference, in the interface file eth0 is 1G and eth1 is 10G:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c"># The loopback network interface</span>
+
+auto lo
+
+iface lo inet loopback
+
+<span class="c"># The primary network interface</span>
+
+auto eth0
+
+iface eth0 inet manual
+
+<span class="c"># auto automatically brings the interface up at boot</span>
+
+auto eth1
+
+iface eth1 inet manual
+
+<span class="c"># the manual variable sets it so that the ip settings are not directly configured here, but rather will # be configured by external scripts or files</span>
+
+iface eth1.101 inet manual
+
+ vlan-raw-device eth1
+
+iface eth1.102 inet manual
+
+ vlan-raw-device eth1
+
+iface eth1.103 inet manual
+
+ vlan-raw-device eth1
+
+auto br-mgmt
+
+iface br-mgmt inet static
+
+ bridge_stp off <span class="c"># spanning tree protocol enables multiple bridges to work together</span>
+
+ bridge_waitport 0 <span class="c"># maximum wait time for specified ports to become available</span>
+
+ bridge_fd 0 <span class="c"># forwarding delay</span>
+
+ bridge_ports eth1.101
+
+ address 10.20.20.2
+
+ netmask 255.255.255.0
+
+auto br-vxlan
+
+iface br-vxlan inet manual
+
+ bridge_stp off
+
+ bridge_waitport 0
+
+ bridge_fd 0
+
+ bridge_ports eth1.102
+
+ <span class="c"># On infra nodes, IP address is in neutron container</span>
+
+auto br-vlan
+
+<span class="c"># the bridges for vlan, storage, and management are set to static in order to make their definitions # unchangeable by scripts and or</span>
+
+iface br-vlan inet static
+
+ address 10.241.1.55
+
+ netmask 255.255.0.0
+
+ gateway 10.241.254.253
+
+ dns-nameservers 10.241.1.1
+
+ <span class="c"># Neutron tags this traffic with l3 headers</span>
+
+ bridge_stp off
+
+ bridge_waitport 0
+
+ bridge_fd 0
+
+ bridge_ports eth0
+
+auto br-storage
+
+iface br-storage inet static
+
+ bridge_stp off
+
+ bridge_waitport 0
+
+ bridge_fd 0
+
+ bridge_ports eth1.103
+
+ address 10.20.40.2
+
+ netmask 255.255.255.0
+</code></pre>
+</div>
+
+<p>The next set of steps involve bringing the recently configured network online and then checking the status. This is the part that will contain some debugging/error correction. &lt;We make a lot of assumptions here as to the experience of the reader.&gt;</p>
+
+<p>Bring up interface eth1(10G):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>ifup eth1
+</code></pre>
+</div>
+
+<p>Check eth1 status with:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>ip a s eth1
+</code></pre>
+</div>
+
+<p>Bring up sub-interface (eth.101, 102, and 103):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>ifup eth1.101
+</code></pre>
+</div>
+
+<p>You should get 8021q module needed warning and system will add it to kernel:</p>
+
+<p>The output for the command <code class="highlighter-rouge">$ ip a s eth1.101</code> may appear as:</p>
+
+<p>For eth1.101:</p>
+
+<p><em>WARNING: Could not open /proc/net/vlan/config. Maybe you need to load the 8021q module, or maybe you are not using PROCFS??</em></p>
+
+<p><em>Set name-type for VLAN subsystem. Should be visible in /proc/net/vlan/config</em></p>
+
+<p><em>Added VLAN with VID == 101 to IF -:eth1:-</em></p>
+
+<p>The above warning only appears because this is the first time that the interface has been added. It is not anything to be concerned about.</p>
+
+<p>The output below is similar to the output above except that it is missing the warning. Some interfaces may give a warning and others may not; but, as long as they indicate that they are added to the VID corresponding to their respective ethernet designation, eth1.102 in this case, then everything is fine. For eth1.102:</p>
+
+<p><em>Set name-type for VLAN subsystem. Should be visible in /proc/net/vlan/config</em></p>
+
+<p><em>Added VLAN with VID == 102 to IF -:eth1:-</em></p>
+
+<p>The same is true here as above. This is just another example to display how the VID corresponds to the interface. For eth1.103:</p>
+
+<p><em>Set name-type for VLAN subsystem. Should be visible in /proc/net/vlan/config</em></p>
+
+<p><em>Added VLAN with VID == 103 to IF -:eth1:-</em></p>
+
+<hr />
+
+
+
+</div>
+</body>

@@ -1,0 +1,32 @@
+---
+layout: default
+title: Openstack eLab
+---
+<div ng-include src="'/Views/head.html'"></div>
+<!--Banner-->
+<div class="jumbotron">
+   	<div class="container">
+       	<h1 id="welcome">[[greeting]]</h1>
+       	<p>Openstack eLab was established in 2015. Powered by Chameleon Cloud, our goal is creating one interactive academic online course website.</p>
+       	<p><a class="btn btn-primary btn-md" href="/#/about" role="button">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+<div class="container">
+	<h2 class="text-center" style="padding:1em;">Hands-on Openstack with videos.</h2>
+	<hr>
+	<div class="container">
+      	<div class="row">
+	        {% for topic in site.data.topics %}
+	        	<div class="col-md-6">
+		    		<a {{ topic.link }} >  <h2> {{topic.icon}} {{ topic.title }}</h2></a>
+		    		<p>{{ topic.description }}</p>
+		    	</div>
+			{% endfor %}
+    	</div>
+    	<p style="padding:2em;">
+    	</p>
+    </div>
+</div>
+
+<div ng-include src="'/Views/foot.html'"></div>

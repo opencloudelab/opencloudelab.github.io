@@ -1,0 +1,294 @@
+<head>
+	<title>Openstack eLab</title>
+	<!--Vendor CSS-->
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+		<!--bootstrap-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		<!-- Modified local css-->
+	<link href="/Assets/CSS/jumbotron.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!--Vendor javascripts-->
+		<!--AngularJS-->
+	<script src="/Vendors/angularJS/angular.min.js"></script>
+	<script src="/Vendors/angularJS/angular-route.js"></script>
+	<script src="/Vendors/angularJS/angular-route.min.js"></script>
+	<script src="/Vendors/angularJS/angular-cookie.js"></script>
+		<!--Jquery-->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    	<!--bootstrap-->
+    		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+	<!--My javascripts-->
+	<script src="/App/app.js"></script>
+	<script src="/App/route.js"></script>
+	<script src="/App/Controllers/homeController.js"></script>
+	<script src="/App/Controllers/loginController.js"></script>
+	<script src="/App/Controllers/headController.js"></script>
+	<script src="/App/Controllers/topicController.js"></script>
+	<script src="/App/Factories/authFactory.js"></script>
+	<script src="/App/Factories/buttonFactory.js"></script>
+	<script type="text/javascript" src="/Assets/JS/animate_progress_bar.js"></script>
+	
+
+</head>
+
+<body>
+
+<div class=container id="post">
+  <a href="/#/"><h1>Go back</h1></a>
+
+	<h1 class="post-title">Course 3 Installing Distributed Shell and other infrastructure host packages</h1>
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+	    
+	       <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f37E1FAkSmI" frameborder="0" allowfullscreen></iframe></div>
+
+          <br>
+          <div class="alert alert-info" role="alert">
+              <strong>Let's go!</strong> Run your own hosts.
+          </div>
+
+          <div class="alert alert-success fade in" id="host_create_tip" style="display: none;">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>Host are created successfully!</strong> Login and try them.
+          </div>
+
+          <button type="button" class="btn btn-lg btn-primary" id="create_host">Create your host!</button>
+
+          <p>
+
+          </p>
+
+          <div class="progress" id="progress_class" style="display: none;">
+              <div class="progress-bar progress-bar-striped" id="host_progress_bar2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%"><span class="sr-only">0% Complete</span></div>
+          </div>
+          
+
+          <div id=host_login_tip style="display: none;">
+            
+            <div class="col-md-4">
+              <div class="bs-callout bs-callout-info" id="how_to_login">
+                <h3><i>How to log in your hosts?</i></h3>
+                <p>
+                  Open your terminal, and type:
+                  <code>ssh username@hostIP</code>
+                  <br>And input the password.  
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <table class="table table-condensed" id="host_key">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Host 1</th>
+                    <th>Host 2</th>
+                    <th>host 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>IP</td>
+                    <td>10.241.1.101</td>
+                    <td>10.241.1.102</td>
+                    <td>10.241.1.103</td>
+                  </tr>
+                  <tr>
+                    <td>Username</td>
+                    <td>ubuntu</td>
+                    <td>ubuntu</td>
+                    <td>ubuntu</td>
+                  </tr>
+                  <tr>
+                    <td>Password</td>
+                    <td>oci123</td>
+                    <td>oci123</td>
+                    <td>oci123</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+         
+          </div>
+
+	   	
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	<hr />
+<p>#### Course 3: Installing Distributed Shell and other infrastructure host packages #</p>
+
+<hr />
+
+<p>Next, you will need to install “dsh” (Distributed Shell), which will allow you to send commands to several nodes at once, using the following command:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>apt-get install dsh -y
+</code></pre>
+</div>
+
+<p>After installing, “dsh”(Distributed Shell) is used to test the connection from Infras to other nodes using this procedure:</p>
+
+<ul>
+  <li>Create a directory called group:</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	<span class="nv">$ </span>mkdir -p /root/.dsh/group
+</code></pre>
+</div>
+<ul>
+  <li>Create a file named “hosts” and use the editor of your choice to input the IP’s for the hosts:</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	<span class="nv">$ </span>vi /root/.dsh/group/hosts
+</code></pre>
+</div>
+
+<p>Following the above steps, send the command “echo hi” to all IP’s contained within the file “hosts” while showing their respective IP’s in the CLI:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>dsh -g hosts -c -M <span class="s2">"echo hi"</span>
+</code></pre>
+</div>
+
+<p>After ensuring the communication to all hosts, you need to determine the kernel version of each host using:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>dsh -c -g hosts -M <span class="s1">'uname -a'</span> 
+</code></pre>
+</div>
+
+<p>(This gives the kernel version)
+(Side note– if your kernel version is version 34 or less, it needs upgrading. otherwise, leave it alone)</p>
+
+<p>You can then update all hosts, if needed:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>dsh -c -g hosts -M <span class="s2">"apt-get update"</span>
+</code></pre>
+</div>
+
+<p>Access the installation guide from Rackspace:docs.openstack.org/developer/openstack-ansible/</p>
+
+<p>After the update, you can install several packages needed for further work. If this or any other later steps fail, it may be because of the \ in the script. Simply delete the \ to see if that corrects the problem:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>apt-get install aptitude build-essential git ntp ntpdate <span class="se">\</span>
+ openssh-server python-dev sudo
+</code></pre>
+</div>
+
+<p>Next, you will install Ansible, which you will need to in order to install playbooks later on. Navigate to opt directory:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="nb">cd</span> /opt
+</code></pre>
+</div>
+
+<p>Then, acquire the openstack Ansible program found at their git repo:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git clone https://github.com/openstack/openstack-ansible.git
+</code></pre>
+</div>
+
+<p>Access the openstack-ansible folder:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="nb">cd </span>openstack-ansible/
+</code></pre>
+</div>
+
+<p>Execute the bootstrap-ansible.sh script to install Ansible:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>./scripts/bootstrap-ansible.sh
+</code></pre>
+</div>
+
+<p>Verify Ansible version by:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>ansible --version <span class="c"># (optional)</span>
+</code></pre>
+</div>
+
+<p>The following command installs several packages needed for the next steps (LVM and networking related) to all the hosts detailed in your previously defined “hosts” file:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>dsh -c -g hosts -M <span class="s2">"apt-get install bridge-utils debootstrap ifenslave ifenslave-2.6 lsof lvm2 ntp ntpdate openssh-server sudo tcpdump vlan -y"</span>
+</code></pre>
+</div>
+
+<hr />
+
+
+
+</div>
+</body>

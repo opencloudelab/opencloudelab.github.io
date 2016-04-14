@@ -1,0 +1,364 @@
+<head>
+	<title>Openstack eLab</title>
+	<!--Vendor CSS-->
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+		<!--bootstrap-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		<!-- Modified local css-->
+	<link href="/Assets/CSS/jumbotron.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!--Vendor javascripts-->
+		<!--AngularJS-->
+	<script src="/Vendors/angularJS/angular.min.js"></script>
+	<script src="/Vendors/angularJS/angular-route.js"></script>
+	<script src="/Vendors/angularJS/angular-route.min.js"></script>
+	<script src="/Vendors/angularJS/angular-cookie.js"></script>
+		<!--Jquery-->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    	<!--bootstrap-->
+    		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+	<!--My javascripts-->
+	<script src="/App/app.js"></script>
+	<script src="/App/route.js"></script>
+	<script src="/App/Controllers/homeController.js"></script>
+	<script src="/App/Controllers/loginController.js"></script>
+	<script src="/App/Controllers/headController.js"></script>
+	<script src="/App/Controllers/topicController.js"></script>
+	<script src="/App/Factories/authFactory.js"></script>
+	<script src="/App/Factories/buttonFactory.js"></script>
+	<script type="text/javascript" src="/Assets/JS/animate_progress_bar.js"></script>
+	
+
+</head>
+
+<body>
+
+<div class=container id="post">
+  <a href="/#/"><h1>Go back</h1></a>
+
+	<h1 class="post-title">Course 8 Configuring Ansible and running playbooks</h1>
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+	    
+	       <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZpIrEw6a0LI" frameborder="0" allowfullscreen></iframe></div>
+
+          <br>
+          <div class="alert alert-info" role="alert">
+              <strong>Let's go!</strong> Run your own hosts.
+          </div>
+
+          <div class="alert alert-success fade in" id="host_create_tip" style="display: none;">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>Host are created successfully!</strong> Login and try them.
+          </div>
+
+          <button type="button" class="btn btn-lg btn-primary" id="create_host">Create your host!</button>
+
+          <p>
+
+          </p>
+
+          <div class="progress" id="progress_class" style="display: none;">
+              <div class="progress-bar progress-bar-striped" id="host_progress_bar2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%"><span class="sr-only">0% Complete</span></div>
+          </div>
+          
+
+          <div id=host_login_tip style="display: none;">
+            
+            <div class="col-md-4">
+              <div class="bs-callout bs-callout-info" id="how_to_login">
+                <h3><i>How to log in your hosts?</i></h3>
+                <p>
+                  Open your terminal, and type:
+                  <code>ssh username@hostIP</code>
+                  <br>And input the password.  
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <table class="table table-condensed" id="host_key">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Host 1</th>
+                    <th>Host 2</th>
+                    <th>host 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>IP</td>
+                    <td>10.241.1.101</td>
+                    <td>10.241.1.102</td>
+                    <td>10.241.1.103</td>
+                  </tr>
+                  <tr>
+                    <td>Username</td>
+                    <td>ubuntu</td>
+                    <td>ubuntu</td>
+                    <td>ubuntu</td>
+                  </tr>
+                  <tr>
+                    <td>Password</td>
+                    <td>oci123</td>
+                    <td>oci123</td>
+                    <td>oci123</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+         
+          </div>
+
+	   	
+
+	
+
+	<hr />
+<p>#### Course 8: Configuring Ansible and running playbooks #</p>
+
+<hr />
+
+<p>Configuring Ansible</p>
+
+<p>To configure our containers to be able to talk to the outside world as well as each other, you will need to edit the file openstack_user_config.yml found in the directory: /etc/open-stack_deploy/ . The beginning of the file has a section titled cidr_networks.</p>
+
+<p>For each of the subsections (container, tunnel, and storage) you will need to assign a non-private IP range. In this example 10.20.20.0/24 is used for the container network (which is the same as the management network), 10.20.30.0/24 is used for the tunnel network (which is the vxlan network), and 10.20.40.0/24 is used for the storage network.</p>
+
+<p>The next section is title used_ips. This section tells Ansible what IP ranges are currently in use and not to use them. That section should be replaced with the following:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>10.20.20.2,10.20.20.50
+10.20.30.2,10.20.30.50
+10.20.40.2,10.20.40.50
+</code></pre>
+</div>
+
+<p>The step above provides a range of IPs from 2-50 so that there is room for expansion. However, this set range does not necessarily need to be this large.</p>
+
+<hr />
+
+<p>END OF VIDEOS</p>
+
+<hr />
+
+<p>The next section is titled <strong>global_overrides</strong>, which will allow you to replace the subsections <strong>internal_lb_vip_address</strong> with the example internal address of <strong>10.20.20.10</strong> and then replace <strong>external_lb_vip_address</strong> with <strong>10.241.1.59</strong>. The internal IP address used in the example was arbitrarily chosen from the range for the applicable mgmt network, while the external address is the address for the HAProxy/Logging node. The two subsections that follow are only to be changed if they are different than what is configured in the hosts (<strong>tunneling_bridge, management_bridge</strong>).</p>
+
+<p>The next section to be modified allows for the configuration of a VLAN for a physical provider network. The first subsection describes VLAN as having <strong>type:”flat”</strong> and <strong>net_name: “flat”</strong>. Do not edit that section and proceed with the following to setup a VLAN for a physical provider network. Take the entire section beginning with the subheading <strong>-network</strong> and delete everything including the subsection <strong>-linux_bridge_agent</strong>.</p>
+
+<p>The next section that will need to be modified is titled shared infra hosts. You will need to modify the following section so that it reads as follows:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>shared-infra_hosts:
+</code></pre>
+</div>
+
+<p><strong>&lt;begin delete&gt;</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    aiol:
+        <span class="c">#rabbitmq, and galera are set to multiples to test clustering</span>
+        affinity:
+        galera_container: 3
+        rabbit_mq_container: 3
+        ip: 172.29.236.100
+</code></pre>
+</div>
+
+<p><strong>&lt;end delete&gt;</strong></p>
+
+<p>In the case of the example given above, you would replace the above deleted section with the following:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    infra1:
+        ip: 10.20.20.55
+        infra2:
+        ip: 10.20.20.56
+        infra3:
+        ip: 10.20.20.67
+</code></pre>
+</div>
+
+<p>Using the example above, you would replace the next deleted section with the following:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    infra1:
+      ip: 10.20.20.55
+    infra2:
+      ip: 10.20.20.56
+    infra3:
+      ip: 10.20.20.67
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>os-infra_hosts:
+</code></pre>
+</div>
+
+<p><strong>&lt;begin delete&gt;</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>        aiol:
+      <span class="c"># Horizon is set to multiple to test clustering. This test only requires x2.</span>
+      affinity:
+         horizon_containter: 2
+      ip: 172.29.236.100
+</code></pre>
+</div>
+
+<p><strong>&lt;end delete&gt;</strong></p>
+
+<p>Repeat the same operation for <strong>storage-infra_hosts</strong>, <strong>repo-infra_hosts</strong>, <strong>identity_hosts</strong>, and <strong>network_hosts</strong>. Delete the body of the section and replace it with the infra1, infra2, and infra3 ips as was demonstrated above.</p>
+
+<p>Next, the compute hosts are different. Compute host IPs are the same as your previously assigned compute hosts. Using the example case, you would delete the body as shown above, but replace it with the single compute host IP: <strong>10.241.1.58</strong>.</p>
+
+<p>The last sections that need to be edited are <strong>log_hosts</strong> and <strong>haproxy_hosts</strong>. You will need to delete their respective bodies as discussed previously; and, since the HAProxy node is on the same server as the Logging node, you will need to edit both to contain the following:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>haproxy_log:
+         ip: 10.241.1.59
+</code></pre>
+</div>
+
+<p>This concludes the editing of this file. Save and quit. Ansible now has been informed as to where everything is to reside. Next, you will need to use a python script to auto-fill the file <strong>user_secrets.yml</strong> with the passwords required for the various service credentials.</p>
+
+<hr />
+
+<h4 id="autofilling-usersecrets">Autofilling user_secrets</h4>
+
+<p>First, navigate to the directory <strong>/opt/openstack-ansible/scripts</strong> and run the python script that will generate the passwords needed by the following command:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>python pw_token_gen.py --file /etc/openstack_deploy/user_secrets.yml
+</code></pre>
+</div>
+<p>Then, verify that <strong>user_secrets.yml</strong> has been modified by opening it with the editor of your choice. You can also modify the line <strong>keystone_auth_admin_password</strong> to contain the password <strong>openstack</strong>. This can be used to avoid having to type in the otherwise long string that is automatically generated by the python script every time it will be needed later. You can always create a much more complex password if needed.</p>
+
+<hr />
+
+<h4 id="final-ansible-configuration-and-syntax-check">Final Ansible configuration and syntax check</h4>
+
+<p>Next, check the file <strong>user_variables</strong> located in the directory <strong>/etc/openstack_deploy/</strong> to make sure that the line for <strong>nova_virt_type: kvm</strong> is commented out as follows:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c"># nova_virt_type: kvm</span>
+</code></pre>
+</div>
+
+<p>Then, check the integrity of your configuration files by navigating to the directory <strong>$ cd /opt/openstack-ansible/playbooks</strong> and using the following script: <strong>openstack-ansible setup-everything.yml –syntax-check</strong></p>
+
+<p>You may run into a small problem when you first start running your playbooks if Ansible is having a problem running sysstat. To correct this, ansible.cfgmay have to be modified by adding the following line to the end of the file:</p>
+
+<p><strong>scp_if_ssh = True</strong></p>
+
+<hr />
+
+<p>Playbooks</p>
+
+<p>Finally, you can start running playbooks. The playbooks may fail or have a warning about ignored problems. Usually, if you simply rerun the playbook(s) that had a problem, it/they will finish installing correctly. From the same <strong>/opt/openstack-ansible/playbooks</strong> directory you can run the playbooks in this order:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>setup-hosts.yml
+</code></pre>
+</div>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>setup-infra.yml
+</code></pre>
+</div>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>setup-openstack.yml
+</code></pre>
+</div>
+
+<p>If your install hangs on lxc you can manually restart it by using the following commands:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>setup-haproxy.yml
+<span class="gp">$ </span>setup-infrastructure.yml
+<span class="gp">$ </span>memcached-install.yml
+</code></pre>
+</div>
+
+<p>Next, list the containers to verify that they were created properly:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>lxc-ls -f
+</code></pre>
+</div>
+
+<p>Then, connect to the containers:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>lxc-attach -n infra1_neutron_agents_container-1564d34 <span class="c"># (The last contiguous variable is a container listed after Ansible creates containers for you. So, the number at the end will probably be different for each creation)</span>
+</code></pre>
+</div>
+
+<p>Once all the playbooks have been run successfully and/or containers successfully deployed, you can use Horizon to open your cloud and spin up VM’s…</p>
+
+
+
+</div>
+</body>

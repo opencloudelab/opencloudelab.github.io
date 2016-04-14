@@ -1,0 +1,241 @@
+<head>
+	<title>Openstack eLab</title>
+	<!--Vendor CSS-->
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+		<!--bootstrap-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		<!-- Modified local css-->
+	<link href="/Assets/CSS/jumbotron.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!--Vendor javascripts-->
+		<!--AngularJS-->
+	<script src="/Vendors/angularJS/angular.min.js"></script>
+	<script src="/Vendors/angularJS/angular-route.js"></script>
+	<script src="/Vendors/angularJS/angular-route.min.js"></script>
+	<script src="/Vendors/angularJS/angular-cookie.js"></script>
+		<!--Jquery-->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    	<!--bootstrap-->
+    		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+	<!--My javascripts-->
+	<script src="/App/app.js"></script>
+	<script src="/App/route.js"></script>
+	<script src="/App/Controllers/homeController.js"></script>
+	<script src="/App/Controllers/loginController.js"></script>
+	<script src="/App/Controllers/headController.js"></script>
+	<script src="/App/Controllers/topicController.js"></script>
+	<script src="/App/Factories/authFactory.js"></script>
+	<script src="/App/Factories/buttonFactory.js"></script>
+	<script type="text/javascript" src="/Assets/JS/animate_progress_bar.js"></script>
+	
+
+</head>
+
+<body>
+
+<div class=container id="post">
+  <a href="/#/"><h1>Go back</h1></a>
+
+	<h1 class="post-title">Course 2 Key pair creation and distribution</h1>
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+	    
+	       <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gFjOGYXCYJM" frameborder="0" allowfullscreen></iframe></div>
+
+          <br>
+          <div class="alert alert-info" role="alert">
+              <strong>Let's go!</strong> Run your own hosts.
+          </div>
+
+          <div class="alert alert-success fade in" id="host_create_tip" style="display: none;">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>Host are created successfully!</strong> Login and try them.
+          </div>
+
+          <button type="button" class="btn btn-lg btn-primary" id="create_host">Create your host!</button>
+
+          <p>
+
+          </p>
+
+          <div class="progress" id="progress_class" style="display: none;">
+              <div class="progress-bar progress-bar-striped" id="host_progress_bar2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%"><span class="sr-only">0% Complete</span></div>
+          </div>
+          
+
+          <div id=host_login_tip style="display: none;">
+            
+            <div class="col-md-4">
+              <div class="bs-callout bs-callout-info" id="how_to_login">
+                <h3><i>How to log in your hosts?</i></h3>
+                <p>
+                  Open your terminal, and type:
+                  <code>ssh username@hostIP</code>
+                  <br>And input the password.  
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <table class="table table-condensed" id="host_key">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Host 1</th>
+                    <th>Host 2</th>
+                    <th>host 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>IP</td>
+                    <td>10.241.1.101</td>
+                    <td>10.241.1.102</td>
+                    <td>10.241.1.103</td>
+                  </tr>
+                  <tr>
+                    <td>Username</td>
+                    <td>ubuntu</td>
+                    <td>ubuntu</td>
+                    <td>ubuntu</td>
+                  </tr>
+                  <tr>
+                    <td>Password</td>
+                    <td>oci123</td>
+                    <td>oci123</td>
+                    <td>oci123</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+         
+          </div>
+
+	   	
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	     
+
+	
+
+	<hr />
+
+<h4 id="course-2-key-pair-creation-and-distribution">Course 2: Key pair creation and distribution</h4>
+
+<hr />
+
+<h5 id="create-key-pairs-key-pairs-are-like-the-guest-keys-to-your-friendfamilys-house-for-our-case-we-need-to-take-the-public-key-from-all-our-infra-nodes-and-copy-them-to-all-other-nodes-which-would-mean-generating-a-public-key-for-infra1-infra2-and-infra3-copying-those-public-keys-to-infra1-infra2-infra3-storage-compute-and-the-logging-nodes">Create key pairs. Key pairs are like the guest keys to your friend/family’s house. For our case, we need to take the “public key” from all our infra nodes and copy them to all other nodes. Which would mean generating a public key for infra1, infra2, and infra3, copying those public keys to infra1, infra2, infra3, storage, compute, and the logging nodes.</h5>
+
+<p>In this example, we use the following sequence of commands and instructions:</p>
+
+<p>First, ssh into your infra 1, infra2, and infra3 nodes. This process will seem tedious:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>ssh root@10.241.1.55 <span class="c"># or whatever your infra1 node ip is</span>
+<span class="gp">$ </span><span class="nb">cd</span> .ssh <span class="c"># takes you to the ssh directory</span>
+<span class="gp">$ </span>ssh-keygen -t rsa <span class="c"># generates a key and saves it in rsa</span>
+</code></pre>
+</div>
+
+<p>After running the previous command you will see a strange box with characters in it. This is the public key that you will add to the authorized_keys file found it infra1. First verify its existence and then transfer it:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>ls
+<span class="gp">$ </span>ssh root@10.241.1.54 <span class="s2">"echo '</span><span class="sb">`</span>cat -/.ssh/id_rsa.pub<span class="sb">`</span><span class="s2">' &amp;gt;&amp;gt; /.ssh/authorized_keys"</span>
+</code></pre>
+</div>
+
+<p>You will probably be prompted with a password request, but after completing the password, the command will execute. The above command prints the ssh public key found at /ssh/id_rsa.pub and appends the file/ssh/authorized_keys. This same operation is performed so that all infrastructure node keys reside on all other nodes. This means also appending the authorized_keys on each node with their own public key. The following is a copy paste version of the commands needed for each server to perform. Remember to change the ips to your respective ips:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>ssh root@10.241.1.55
+<span class="gp">$ </span><span class="nb">cd</span> .ssh
+<span class="gp">$ </span>ssh-keygen -t rsa
+<span class="gp">$ </span>cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys
+<span class="gp">$ </span>ssh root@10.241.1.54 “echo ‘<span class="sb">`</span>cat -/.ssh/id_rsa.pub<span class="sb">`</span>’ &gt;&gt; /.ssh/authorized_keys”
+</code></pre>
+</div>
+
+<p>You will be prompted with a password request each time you execute this command.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>ssh root@10.241.1.56 “echo ‘<span class="sb">`</span>cat -/.ssh/id_rsa.pub<span class="sb">`</span>’ &gt;&gt; /.ssh/authorized_keys”
+</code></pre>
+</div>
+
+<hr />
+
+
+
+</div>
+</body>
