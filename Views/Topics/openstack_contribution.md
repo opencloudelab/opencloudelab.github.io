@@ -10,7 +10,7 @@ ul.mod {
 </style>
 
 
-### Video Lessons
+## Video Lessons
 <ul class='mod'>
 	{% for post in site.posts reversed %}
 
@@ -20,8 +20,8 @@ ul.mod {
 			<h4>
 				<a href="{{ post.url }}" target="_blank"><i class="fa fa-flask" aria-hidden="true"></i> {{ post.title }}</a>
 			</h4>
-			<p class='text-primary'>April 8th, 2016  by Xin Zhang<br></p>
-			<p class='text-muted'>Course content snapshot should be placed here. OpenStack began in 2010 as a joint project of Rackspace Hosting and NASA.<br><hr></p>
+			<p class='text-primary'>{{ post.author }}</p>
+			<p class='text-muted'> {{ post.description }}</p>
 		</li>
 		{% endif %}
 		

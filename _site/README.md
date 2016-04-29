@@ -1,2 +1,1 @@
-# cloudandbigdatalab.github.io
-Openstack eLab
+# opencloudelab.github.io

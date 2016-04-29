@@ -1,0 +1,82 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#test").hide();
+        console.log("button click");
+    });
+});
+</script>
+
+<div>
+  <button>Click me</button>
+  <p id="test">This is another paragraph.</p>
+
+  <div class="alert alert-info" role="alert">
+    <strong>Let's go!</strong> Run your own hosts.
+  </div>
+
+  <div class="alert alert-success fade in" id="host_create_tip" style="display: none;">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Host are created successfully!</strong> Login and try them.
+  </div>
+
+  <button type="button" class="btn btn-lg btn-primary" id="create_host">Create your host!</button>
+
+  <p>
+
+  </p>
+
+  <div class="progress" id="progress_class" style="display: none;">
+    <div class="progress-bar progress-bar-striped" id="host_progress_bar2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%"><span class="sr-only">0% Complete</span></div>
+  </div>
+
+
+  <div id=host_login_tip style="display: none;">
+
+    <div class="col-md-4">
+      <div class="bs-callout bs-callout-info" id="how_to_login">
+        <h3><i>How to log in your hosts?</i></h3>
+        <p>
+          Open your terminal, and type:
+          <code>ssh username@hostIP</code>
+          <br>And input the password.  
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <table class="table table-condensed" id="host_key">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Host 1</th>
+            <th>Host 2</th>
+            <th>host 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>IP</td>
+            <td>10.241.1.101</td>
+            <td>10.241.1.102</td>
+            <td>10.241.1.103</td>
+          </tr>
+          <tr>
+            <td>Username</td>
+            <td>ubuntu</td>
+            <td>ubuntu</td>
+            <td>ubuntu</td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td>oci123</td>
+            <td>oci123</td>
+            <td>oci123</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>

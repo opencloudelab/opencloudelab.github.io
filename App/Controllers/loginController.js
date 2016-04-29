@@ -4,7 +4,8 @@ myApp.controller('loginController', ['$rootScope', '$scope', '$location', 'authF
 	$scope.submit = function() {
 		var username = $scope.username;
 		var password = $scope.password;
-		if (username == 'admin' && password == '123') {
+
+		if (username == 'elab' && password == 'chameleon') {
 			authFactory.setAccess(true);
 			console.log('Correct input.');
 

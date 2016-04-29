@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     $('#create_host').click(function() {
+        console.log("button click");
 
       $('#progress_class').show({easing:'swing'});
       $(function() {

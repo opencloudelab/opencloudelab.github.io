@@ -13,20 +13,60 @@ title: Openstack eLab
 </div>
 
 <div class="container">
-	<h2 class="text-center" style="padding:1em;">Hands-on Openstack with videos.</h2>
-	<hr>
+	<h2 class="text-left">Openstack Developer Certification:</h2>
+  <p>This guide provides detailed instructions on the documentation contribution workflow and conventions to be considered by all contributors. Please follow these guidelines to keep the documentation structure, style, and syntax consistent.</p>
 	<div class="container">
-      	<div class="row">
-	        {% for topic in site.data.topics %}
-	        	<div class="col-md-6">
-		    		<a {{ topic.link }} >  <h2> {{topic.icon}} {{ topic.title }}</h2></a>
-		    		<p>{{ topic.description }}</p>
+	         {% for topic in site.data.topics %}
+           <ul>
+	        	<div>
+		    		<a {{ topic.link }} >  <h3> - {{ topic.title }}</h3></a>
+		    		<!--description
+            <p>{{ topic.description }}</p>
+            -->
 		    	</div>
-			{% endfor %}
-    	</div>
-    	<p style="padding:2em;">
+          </ul>
+			     {% endfor %}
     	</p>
     </div>
 </div>
+
+<div class="container">
+  <h2 class="text-left">Machine Learning Certification(Coming soon):</h2>
+  <p>This guide provides detailed instructions on the documentation contribution workflow and conventions to be considered by all contributors. Please follow these guidelines to keep the documentation structure, style, and syntax consistent.</p>
+  <div class="container">
+           {% for topic in site.data.topics2 %}
+           <ul>
+            <div>
+            <a {{ topic.link }} >  <h3> - {{ topic.title }}</h3></a>
+            <!--description
+            <p>{{ topic.description }}</p>
+            -->
+          </div>
+          </ul>
+           {% endfor %}
+      </p>
+    </div>
+</div>
+
+<div class="container">
+  <h2 class="text-left">Internet of Things Certification(Coming soon):</h2>
+  <p>This guide provides detailed instructions on the documentation contribution workflow and conventions to be considered by all contributors. Please follow these guidelines to keep the documentation structure, style, and syntax consistent.</p>
+  <div class="container">
+           {% for topic in site.data.topics3 %}
+           <ul>
+            <div>
+            <a {{ topic.link }} >  <h3> - {{ topic.title }}</h3></a>
+            <!--description
+            <p>{{ topic.description }}</p>
+            -->
+          </div>
+          </ul>
+           {% endfor %}
+      <p style="padding:2em;">
+      </p>
+    </div>
+</div>
+
+
 
 <div ng-include src="'/Views/foot.html'"></div>
