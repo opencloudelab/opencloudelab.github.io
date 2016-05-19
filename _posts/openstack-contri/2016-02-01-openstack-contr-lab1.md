@@ -2,10 +2,14 @@
 layout: post
 title: Lab 1 Create an Ubuntu One Account
 categories: openstack-contri
-author: April 8th, 2016  by Xin Zhang
-description: Course content snapshot should be placed here. OpenStack began in 2010 as a joint project of Rackspace Hosting and NASA.
+author: 
+description: Here we will begin by setting up an Ubuntu One account which is used for several things, including contributing to OpenStack.
 ---
 
 
--> Add text here
+OpenStack uses the Ubuntu One account ... fill in information here.
+
+First, head to  [https://one.ubuntu.com]( https://one.ubuntu.com) and set up an account. 
+Once done with this, check your email for a verification code and submit that code once following a link back to their website.
+And now you are done with this step of the set up.
 
