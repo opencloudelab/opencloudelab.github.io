@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Openstack Installation
+title: Openstack Object Storage
 ---
 
 <style>
