@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Lab 9 Document Change Verification
+title: Lab 8 Document Change Verification
 categories: openstack-contri
-author: April 8th, 2016  by Xin Zhang
-description: Course content snapshot should be placed here. OpenStack began in 2010 as a joint project of Rackspace Hosting and NASA.
+author: 
+description: This is a short lesson on how to do version control for your OpenStack contributions.
 ---
 
 ## Document Change Verification
