@@ -4,13 +4,19 @@
   image: bla
   link: href="/#/"
 
-- title: Course 2
+- title: Orchestration of Containers
   icon: <i class="fa fa-download" aria-hidden="true"></i>
   description: 
   image:  bla
   link: href="/#/"
 
-- title: Course 3
+- title: Continous Integration and Development
+  icon: <i class="fa fa-download" aria-hidden="true"></i>
+  description: 
+  image:  bla
+  link: href="/#/"
+  
+- title: Introduction to Tutum
   icon: <i class="fa fa-download" aria-hidden="true"></i>
   description: 
   image:  bla
