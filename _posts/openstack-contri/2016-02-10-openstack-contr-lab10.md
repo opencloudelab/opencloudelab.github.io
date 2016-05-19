@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lab 10 Submitting Your Info to Stackalytics
+title: Lab 9 Submitting Your Info to Stackalytics
 categories: openstack-contri
 author: 
 description: How to add your info to Stackalytics so that we can properly identify who is contributing and to what. Credit where credit is due.
