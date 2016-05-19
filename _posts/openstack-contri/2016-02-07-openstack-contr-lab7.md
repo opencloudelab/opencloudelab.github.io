@@ -2,8 +2,8 @@
 layout: post
 title: Lab 7 Committing A Bug Fix
 categories: openstack-contri
-author: April 8th, 2016  by Xin Zhang
-description: Course content snapshot should be placed here. OpenStack began in 2010 as a joint project of Rackspace Hosting and NASA.
+author: 
+description: For this course we will show you how to use a shell to commit a bug fix.
 ---
 
 ## Committing A Bug Fix
@@ -33,7 +33,7 @@ Step 4 - Create a File
 
 ```sh
 touch ./yourfile.py
-echo -e "Hello OpenStack Community,\nThis is My Frst Bug Fix.\nI hope really hope it gets merged to master." > yourfile.py
+echo -e "Hello OpenStack Community,\nThis is My First Bug Fix.\nI hope really hope it gets merged to master." > yourfile.py
 ```
 
 Step 5 - Check the Git Status
