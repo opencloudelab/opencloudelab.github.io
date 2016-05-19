@@ -2,8 +2,8 @@
 layout: post
 title: Lab 4 Setup Git Review
 categories: openstack-contri
-author: April 8th, 2016  by Xin Zhang
-description: Course content snapshot should be placed here. OpenStack began in 2010 as a joint project of Rackspace Hosting and NASA.
+author: 
+description: Here we set up a git review acccount to aid us in properly submitting bug fixes.
 ---
 
 ## Setup Git-Review
@@ -25,6 +25,7 @@ Step 2 - Install Git-Review
 
 Step 3 - Configure Git Identity
 
+Be sure to use the email you used to register at __OpenStack Foundation__.
 ```sh
 git config --global user.name "Firstname Lastname"
 git config --global user.email youremail@example.com
