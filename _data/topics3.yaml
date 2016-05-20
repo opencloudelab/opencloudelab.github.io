@@ -1,16 +1,16 @@
-- title: Course 1
+- title: Smart Predictor using Machine Learning
   icon: <i class="fa fa-code-fork" aria-hidden="true"></i>
   description: 
   image: bla
   link: href="/#/"
 
-- title: Course 2
+- title: Tensor Flow
   icon: <i class="fa fa-download" aria-hidden="true"></i>
   description: 
   image:  bla
   link: href="/#/"
 
-- title: Course 3
+- title: Caffe
   icon: <i class="fa fa-download" aria-hidden="true"></i>
   description: 
   image:  bla
