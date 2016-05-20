@@ -2,7 +2,7 @@
   icon: <i class="fa fa-code-fork" aria-hidden="true"></i>
   description: 
   image: bla
-  link: href="/#/"
+  link: href="/#/docker-containers/Introduction"
 
 - title: Orchestration of Containers
   icon: <i class="fa fa-download" aria-hidden="true"></i>
