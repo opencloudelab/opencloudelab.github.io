@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Lab 1 Create an Ubuntu One Account
+title: Lab 1 Introduction to Docker Containers
 categories: Introduction
 author: Aqsa
 description: Docker container introduction
 ---
 
 
-OpenStack uses the Ubuntu One account ... fill in information here.
 
-First, head to  [https://one.ubuntu.com]( https://one.ubuntu.com) and set up an account. 
-Once done with this, check your email for a verification code and submit that code once following a link back to their website.
-And now you are done with this step of the set up.
+
+First, head to  docker.doc.
 
