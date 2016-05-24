@@ -63,7 +63,7 @@ Here **ceph1** is the host name
 Don't use floting/public IP. Do **ip a** to get static IP. 
 
 ```sh$
-    10.40.0.253 ceph1
+10.40.0.253 ceph1
 ```
 Now we need to reboot the server
 ```sh$
