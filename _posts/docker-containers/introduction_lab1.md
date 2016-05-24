@@ -26,10 +26,10 @@ Most of the docker descriptions are taken directly from their glossary.
 
 **Docker Hub:** The Docker Hub is a centralized resource for working with Docker and its components. Like GitHub but for Docker images. 
 **Container:** A container is a runtime instance of a docker image. A Docker container consists of:
--A Docker image
--Execution environment
--A standard set of instructions
--The concept is borrowed from Shipping Containers, which define a standard to ship goods globally. Docker defines a standard to ship software. 
+*A Docker image
+*Execution environment
+*A standard set of instructions
+*The concept is borrowed from Shipping Containers, which define a standard to ship goods globally. Docker defines a standard to ship software. 
 
 **Dockerfile:** A Dockerfile is a text document that contains all the commands you would normally execute manually in order to build a Docker image. Docker can build images automatically by reading the instructions from a Dockerfile. 
 
