@@ -17,6 +17,18 @@
 				<div ng-switch-default>
 					<div ng-include src="'/Views/Topics/openstack_contribution'"></div>
 				</div>
+				<div ng-switch-when="openstack_objectstorage">
+					<div ng-include src="'/Views/Topics/openstack_objectstorage'"></div>
+				</div>
+				<div ng-switch-when="docker_containers">
+					<div ng-include src="'/Views/Topics/docker_containers'"></div>
+				</div>
+				<div ng-switch-when="machine_learning">
+					<div ng-include src="'/Views/Topics/machine_learning'"></div>
+				</div>
+				<div ng-switch-when="internet_of_things">
+					<div ng-include src="'/Views/Topics/internet_of_things'"></div>
+				</div>
 			</div>
 		</div>
 	</div>
