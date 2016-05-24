@@ -13,7 +13,7 @@ ul.mod {
 <ul class='mod'>
 	{% for post in site.posts reversed %}
 
-		{% if post.categories contains 'openstack-objectstorage' %}
+		{% if post.categories contains 'swift-install' %}
 		
 		<li>
 			<h4>	
