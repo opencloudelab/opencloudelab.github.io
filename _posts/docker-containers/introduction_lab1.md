@@ -44,5 +44,4 @@ _uWGSI:_ An application server that connects to Nginx. In our tutorial we’re u
 
 
 
-First, head to  docker.doc.
 
