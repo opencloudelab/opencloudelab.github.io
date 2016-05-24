@@ -24,8 +24,10 @@ Most of the docker descriptions are taken directly from their glossary.
 
 **Image:**Docker images are the basis of containers. An Image is an ordered collection of root filesystem changes and the corresponding execution parameters for use within a container runtime. An image typically contains a union of layered filesystems stacked on top of each other. An image does not have state and it never changes.
 
-**Docker Hub:** The Docker Hub is a centralized resource for working with Docker and its components. Like GitHub but for Docker images. 
+**Docker Hub:** The Docker Hub is a centralized resource for working with Docker and its components. Like GitHub but for Docker images.
+
 **Container:** A container is a runtime instance of a docker image. A Docker container consists of:
+
 *A Docker image
 *Execution environment
 *A standard set of instructions
