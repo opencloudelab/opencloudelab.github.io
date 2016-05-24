@@ -14,10 +14,5 @@
   icon: <i class="fa fa-download" aria-hidden="true"></i>
   description: 
   image:  bla
-  link: href="/#/"
+  link: href="/#/topics/cloud_dashboard"
   
-#- title: OpenStack Object Storage
-#  icon: <i class="fa fa-download" aria-hidden="true"></i>
-#  description: 
-#  image:  bla
-#  link: href="/#/"
