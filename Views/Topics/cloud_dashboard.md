@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Openstack Object Storage
+title: Cloud Dashboard
 ---
 
 <style>
@@ -13,7 +13,7 @@ ul.mod {
 <ul class='mod'>
 	{% for post in site.posts reversed %}
 
-		{% if post.categories contains 'openstack-objectstorage' %}
+		{% if post.categories contains 'cloud-dashboard' %}
 		
 		<li>
 			<h4>	
