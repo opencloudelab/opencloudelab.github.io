@@ -7,7 +7,6 @@ description: Introduction to Docker
 ---
 #### We followed, abridged, and skipped around the guide laid out at: 
 [https://docs.docker.com/](https://docs.docker.com/)
- 
 
 ## Docker Fundamentals
 In this tutorial we’re going to guide you through the fundamentals of using Docker on Chameleon Cloud. You should already be familiar with managing resources on Chameleon Cloud, if not follow the “Openstack Course 1” tutorial.
