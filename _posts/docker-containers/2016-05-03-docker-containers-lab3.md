@@ -9,16 +9,17 @@ description: Docker Installation
 [https://docs.docker.com/](https://docs.docker.com/)
 
 ### Step 1: Update APT package index.
-```sh
-sudo apt-get update```
+``` sh
+sudo apt-get update 
+```
 
 ### Step 2: Install Docker
-```sh
+``` sh
 sudo apt-get install docker-engine
 ```
 
 ### Step 3: Start the docker daemon.
-```sh
+``` sh
 sudo service docker start
 ```
 
