@@ -34,13 +34,13 @@ $ sudo su -
 Install bellow mentioned packages:
 
 ```sh
-$ yum install epel-release -y
+# yum install epel-release -y
 ```
 ```sh
-$ yum install boost-devel* -y
+# yum install boost-devel* -y
 ```
 ```sh
-$ yum install lttn* -y
+# yum install lttn* -y
 ```
 ```sh
 $ yum install librados* -y 
