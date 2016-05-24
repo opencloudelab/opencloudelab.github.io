@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Openstack Object Storage
+title: swift installation
 ---
 
 <style>
