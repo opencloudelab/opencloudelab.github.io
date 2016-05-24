@@ -1,11 +1,11 @@
-- title: Ceph Installation
+- title: Ceph - Relible and Scalable Storage Syatem. 
   icon: <i class="fa fa-code-fork" aria-hidden="true"></i>
   description: 
   image: bla
   link: href="/#/topics/ceph_installation"
 
 
-- title: Swift Installation
+- title: Swift - Way to get your own DropBox.
   icon: <i class="fa fa-download" aria-hidden="true"></i>
   description: 
   image:  bla
