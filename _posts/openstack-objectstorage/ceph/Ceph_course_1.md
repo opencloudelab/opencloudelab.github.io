@@ -36,29 +36,29 @@ Install bellow mentioned packages:
 ```sh$
 # yum install epel-release -y
 ```
-```sh
+```sh$
 # yum install boost-devel* -y
 ```
-```sh
+```sh$
 # yum install lttn* -y
 ```
-```sh
-$ yum install librados* -y 
+```sh$
+# yum install librados* -y 
 ```
-```sh
-$ yum install libceph* -y
+```sh$
+# yum install libceph* -y
 ```
-```sh
-$ yum install librbd* -y
+```sh$
+# yum install librbd* -y
 ```
-```sh
-$ easy_install ceph-deploy
+```sh$
+# easy_install ceph-deploy
 ```
-```sh
-$ yum install xfsprogs xfsdump -y
+```sh$
+# yum install xfsprogs xfsdump -y
 ```
-```sh
-$ yum install nano -y
+```sh$
+# yum install nano -y
 ```
 
 
