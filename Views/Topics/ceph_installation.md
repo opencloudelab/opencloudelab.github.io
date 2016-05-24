@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ceph Installation
+title: ceph Installation
 ---
 
 <style>
@@ -9,7 +9,7 @@ ul.mod {
 }
 </style>
 
-### Video Lessons
+### Ceph Video Lessons
 <ul class='mod'>
 	{% for post in site.posts reversed %}
 
