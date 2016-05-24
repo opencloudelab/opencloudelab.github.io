@@ -22,23 +22,22 @@ Most of the docker descriptions are taken directly from their glossary.
 
 **Docker Engine or "Docker" :**  The docker daemon process running on the host which manages images and containers.
 
-_Image:_ Docker images are the basis of containers. An Image is an ordered collection of root filesystem changes and the corresponding execution parameters for use within a container runtime. An image typically contains a union of layered filesystems stacked on top of each other. An image does not have state and it never changes.
+**Image:**Docker images are the basis of containers. An Image is an ordered collection of root filesystem changes and the corresponding execution parameters for use within a container runtime. An image typically contains a union of layered filesystems stacked on top of each other. An image does not have state and it never changes.
 
-_Docker Hub:_ The Docker Hub is a centralized resource for working with Docker and its components. Like GitHub but for Docker images. 
-
-_Container:_ A container is a runtime instance of a docker image. A Docker container consists of:
+**Docker Hub:** The Docker Hub is a centralized resource for working with Docker and its components. Like GitHub but for Docker images. 
+**Container:** A container is a runtime instance of a docker image. A Docker container consists of:
 -A Docker image
 -Execution environment
 -A standard set of instructions
 -The concept is borrowed from Shipping Containers, which define a standard to ship goods globally. Docker defines a standard to ship software. 
 
-_Dockerfile:_ A Dockerfile is a text document that contains all the commands you would normally execute manually in order to build a Docker image. Docker can build images automatically by reading the instructions from a Dockerfile. 
+**Dockerfile:** A Dockerfile is a text document that contains all the commands you would normally execute manually in order to build a Docker image. Docker can build images automatically by reading the instructions from a Dockerfile. 
 
-_Postgres:_ An SQL database. Official Site [http://www.postgresql.org](http://www.postgresql.org).
+**Postgres:** An SQL database. Official Site [http://www.postgresql.org](http://www.postgresql.org).
 
-_Nginx “engine x”:_ A web server. Official Site [http://nginx.com](http://nginx.com) 
+**Nginx “engine x”:** A web server. Official Site [http://nginx.com](http://nginx.com) 
 
-_uWGSI:_ An application server that connects to Nginx. In our tutorial we’re using it to run a simple Python app that generates the demo page. Official Site [https://uwsgi- docs.readthedocs.org/en/latest/](https://uwsgi- docs.readthedocs.org/en/latest/). 
+**uWGSI:** An application server that connects to Nginx. In our tutorial we’re using it to run a simple Python app that generates the demo page. Official Site [https://uwsgi- docs.readthedocs.org/en/latest/](https://uwsgi- docs.readthedocs.org/en/latest/). 
 
 
 
