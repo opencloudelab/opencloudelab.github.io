@@ -33,8 +33,8 @@ $ sudo su -
   
 Install bellow mentioned packages:
 
-```sh
-$# yum install epel-release -y
+```sh$
+# yum install epel-release -y
 ```
 ```sh
 # yum install boost-devel* -y
