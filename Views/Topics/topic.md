@@ -14,9 +14,6 @@
 				<div ng-switch-when="openstack_installation">
 					<div ng-include src="'/Views/Topics/openstack_installation'"></div>
 				</div>
-				<div ng-switch-default>
-					<div ng-include src="'/Views/Topics/openstack_contribution'"></div>
-				</div>
 				<div ng-switch-when="cloud_dashboard">
 					<div ng-include src="'/Views/Topics/cloud_dashboard'"></div>
 				</div>
@@ -31,6 +28,9 @@
 				</div>
 				<div ng-switch-when="internet_of_things">
 					<div ng-include src="'/Views/Topics/internet_of_things'"></div>
+				</div>
+				<div ng-switch-default="openstack_contribution">
+					<div ng-include src="'/Views/Topics/openstack_contribution'"></div>
 				</div>
 			</div>
 		</div>
