@@ -28,10 +28,27 @@ title: Openstack eLab
     	</p>
     </div>
 </div>
+<div class="container">
+  <h2 class="text-left"> Software Defined Storage</h2>
+  <p>This course is all about implementation of object and block storage using Software Defined Storage platforms</p>
+  <div class="container">
+           {% for topic in site.data.objstorage %}
+           <ul>
+            <div>
+            <a {{ topic.link }} >  <h3> - {{ topic.title }}</h3></a>
+            <!--description
+            <p>{{ topic.description }}</p>
+            -->
+          </div>
+          </ul>
+           {% endfor %}
+      </p>
+    </div>
+</div>
 
 <div class="container">
   <h2 class="text-left"> Docker Containers Certification</h2>
-  <p>Docker has brought revolution in containerization technology. With evolving shift in Cloud computing towards containerization, more popularly Docker Containerization,  our tutorials are aimed at helping enthusiasts understand basic and important features of Docker containers. The videos and manuals together provide practical as well as theoretical knowledge for people from various levels of understanding starting from Beginner – Need to know all, to Users – Wanting to know more.</p>
+  <p>Docker has brought a revolution in containerization technology. With evolving shift in Cloud computing towards containerization, more popularly Docker Containerization,  our tutorials are aimed at helping enthusiasts understand basic and important features of Docker containers. The videos and manuals together provide practical as well as theoretical knowledge for people from various levels of understanding starting from Beginner – Need to know all, to Users – Wanting to know more.</p>
   <div class="container">
            {% for topic in site.data.docker %}
            <ul>
