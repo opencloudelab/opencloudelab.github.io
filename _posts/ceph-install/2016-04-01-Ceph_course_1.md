@@ -6,10 +6,9 @@ author:
 description: We begin by installing some basic packages which act as prerequisites for Ceph installation.
 ---
 
-#### We followed, abridged, and skipped around the guide laid out at: # [http://docs.ceph.com/docs/master/start/quick-ceph-deploy/](http://docs.ceph.com/docs/master/start/quick-ceph-deploy/)
+[More info about Ceph](http://docs.ceph.com/docs/master/start/quick-ceph-deploy/)
 
 
-  
 
 * * *
 
