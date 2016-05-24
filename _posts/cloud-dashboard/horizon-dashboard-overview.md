@@ -1,3 +1,19 @@
+---
+layout: post
+title: Course 3: Horizon Dashboard Overview
+categories: cloud-dashboard
+author: 
+description: We give a brief overview of the OpenStack Horizon dashboard.
+---
+
+  
+
+* * *
+
+#### Course 3: Horizon Dashboard Overview #
+
+* * *
+
 First, the URL that we use to connect to the dashboard is connecting to our Horizon service. This URL is usually either a floating or local IP that we set up during the deployment phase. If we need a URL that can be reached externally, we would set up a floating ip, but, if the cloud is only going to be used internally, a local static IP works just fine. Once you have set up a deployment you can set up accounts and passwords for each user and user groups. For this tutorial we assume you have already gone through that phase and move into how the OpenStack Horizon dashboard actually functions.
 
 Horizon is just a gateway to the various services within OpenStack. It is a graphical user interface which gives us ease in creation of virtualization. First, let’s take a look around here. The top left shows us a button which tells us which project we are currently working with. The project we are working on is kind of like a user group. A project allows us to assign a set of users an allotment of assets so that they can all work on a project together or just in a similar direction. Mostly, it’s just a way to divide assets of the cloud. You can be assigned to multiple projects, so, it’s best to check this when you are about to make any changes. 
