@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Course 1 Basic packages installation  
-categories: ceph install
+categories: ceph-install
 author: 
 description: We begin by installing some basic packages which act as prerequisites for Ceph installation.
 ---
