@@ -10,11 +10,7 @@ description: We begin by installing some basic packages which act as prerequisit
 
 
 
-* * *
 
-#### Course 1: Basic packages installation #
-
-* * *
 
 This video discribes single node Ceph installation on CentOS 7 Bare Metal Chameleon cloud server:
 
