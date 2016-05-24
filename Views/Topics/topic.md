@@ -18,10 +18,10 @@
 					<div ng-include src="'/Views/Topics/cloud_dashboard'"></div>
 				</div>
 				<div ng-switch-when="ceph_installation">
-					<div ng-include src="'/Views/Topics/ceph-install'"></div>
+					<div ng-include src="'/Views/Topics/ceph_installation'"></div>
 				</div>
 				<div ng-switch-when="swift_installation">
-					<div ng-include src="'/Views/Topics/swift-install'"></div>
+					<div ng-include src="'/Views/Topics/swift_installation'"></div>
 				</div>
 				<div ng-switch-when="docker_containers">
 					<div ng-include src="'/Views/Topics/docker_containers'"></div>
