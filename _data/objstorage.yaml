@@ -2,7 +2,7 @@
   icon: <i class="fa fa-code-fork" aria-hidden="true"></i>
   description: 
   image: bla
-  link: href="/#/topics/ceph_installation"
+  link: href="/#/topics/openstack_objectstorage"
 
 
 - title: Swift Installation
