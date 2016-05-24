@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Course 1 Preparing Storage nodes for Swift.  
-categories: 
+categories: swift-install
 author: 
 description: We begin Swift instalation by password less ssh and preparing the drive for filesystem.
 ---
