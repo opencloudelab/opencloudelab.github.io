@@ -16,8 +16,8 @@
   image:  bla
   link: href="/#/"
   
-- title: OpenStack Object Storage
-  icon: <i class="fa fa-download" aria-hidden="true"></i>
-  description: 
-  image:  bla
-  link: href="/#/"
+#- title: OpenStack Object Storage
+#  icon: <i class="fa fa-download" aria-hidden="true"></i>
+#  description: 
+#  image:  bla
+#  link: href="/#/"
