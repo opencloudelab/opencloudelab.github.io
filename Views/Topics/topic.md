@@ -17,6 +17,9 @@
 				<div ng-switch-default>
 					<div ng-include src="'/Views/Topics/openstack_contribution'"></div>
 				</div>
+				<div ng-switch-when="cloud_dashboard">
+					<div ng-include src="'/Views/Topics/cloud_dashboard'"></div>
+				</div>
 				<div ng-switch-when="openstack_objectstorage">
 					<div ng-include src="'/Views/Topics/openstack_objectstorage'"></div>
 				</div>
