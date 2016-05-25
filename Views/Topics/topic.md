@@ -30,7 +30,7 @@
 					<div ng-include src="'/Views/Topics/machine_learning'"></div>
 				</div>
 				<div ng-switch-when="tensor_flow">
-					<div ng-include src="'/Views/Topics/tensor-flow'"></div>
+					<div ng-include src="'/Views/Topics/tensor_flow'"></div>
 				</div>
 				<div ng-switch-when="caffe_for_deep_learning">
 					<div ng-include src="'/Views/Topics/caffe_for_deep_learning'"></div>
