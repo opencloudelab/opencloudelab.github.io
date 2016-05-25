@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Smart Predictor using Machine Learning.  
-categories: Machine - Learning
+title: Smart Predictor using Machine Learning 
+categories: machine-learning
 author: Mitha Ann Philip
 description: This section provides an introduction to concepts related to Machine Learning.
 ---
