@@ -9,7 +9,7 @@
   icon: <i class="fa fa-download" aria-hidden="true"></i>
   description: 
   image:  bla
-  link: href="/#/topics/kubernetes"
+  link: href="/#/topics/Kubernetes"
 
 - title: Continous Integration and Development
   icon: <i class="fa fa-download" aria-hidden="true"></i>
