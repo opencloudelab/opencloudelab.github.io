@@ -11,7 +11,7 @@ description: This section provides an introduction to concepts related to Machin
 
 - INTRODUCTION TO MACHINE LEARNING
 
-    You can make your program predict with reference to observations from the past. Machine Learning is an exciting field where your program learns and then predict results. The section focusses primarily on concepts that makes up the field of Machine Learning.  
+    You can make your program predict with reference to observations from the past. Machine Learning is an exciting field where your program learns and then predict results. The section focusses primarily on concepts ad also a few algorithms that are key to the understanding of Machine Learning.  
       
     - NAIVE BAYES
 
