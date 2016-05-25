@@ -2,7 +2,7 @@
   icon: <i class="fa fa-code-fork" aria-hidden="true"></i>
   description: 
   image: bla
-  link: href="/#/"
+  link: href="/#/topics/machine_learning"
 
 - title: Tensor Flow for Machine Learning
   icon: <i class="fa fa-download" aria-hidden="true"></i>
