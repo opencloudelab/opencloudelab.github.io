@@ -9,7 +9,7 @@ ul.mod {
 }
 </style>
 
-### Video Lessons
+### Cafe Video Lessons
 <ul class='mod'>
 	{% for post in site.posts reversed %}
 
