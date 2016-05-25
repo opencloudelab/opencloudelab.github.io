@@ -3,7 +3,7 @@ layout: post
 title: Lab 4 Setting Up Demo Website - Host 1
 categories: docker-containers
 author: Aqsa Fatima
-description: Introduction to Docker
+description: Website set up using two hosts Part One
 ---
 #### We followed, abridged, and skipped around the guide laid out at: 
 [https://docs.docker.com/](https://docs.docker.com/)
