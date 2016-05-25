@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Docker Containers
+title: Docker Installation
 ---
 
 <style>
@@ -9,7 +9,7 @@ ul.mod {
 }
 </style>
 
-### Video Lessons
+### Docker Video Lessons
 <ul class='mod'>
 	{% for post in site.posts reversed %}
 
