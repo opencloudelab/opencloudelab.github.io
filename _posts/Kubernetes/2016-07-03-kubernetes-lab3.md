@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Lab 1 Introduction to Kubernetes
+title: Lab 3 Deploying applications using Kubernetes
 categories: Kubernetes
 author: Aqsa Fatima
-description: Introduction to Docker Orchestration
+description: Now that we have the Kubernetes system in place, we can now use it to deploy applications.
 ---
 #### We followed, abridged, and skipped around the guide laid out at: 
 [https://docs.docker.com/](https://docs.docker.com/)
 
 ###  Simple Uses of Kubernetes
-Now that we have the Kubernetes system in place, we can now use it to deploy applications. As mentioned before, the Master controls the entirety of Kubernetes, so each of these commands will be run on the Master host/instance that we set up previously. In our example, this would be the <> machine. To start off with, we will take a look at the attached nodes using the followin command.
+Now that we have the Kubernetes system in place, we can now use it to deploy applications. As mentioned before, the Master controls the entirety of Kubernetes, so each of these commands will be run on the Master host/instance that we set up previously. In our example, this would be the <> machine. To start off with, we will take a look at the attached nodes using the following command.
 ``` sh
 kubectl get nodes
 ```
