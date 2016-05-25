@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lab 1 Introduction to Continuous Integration
-categories: Kubernetes
+categories: Integration
 author: Aqsa Fatima
 description: Introduction to Continuous Integration
 ---
