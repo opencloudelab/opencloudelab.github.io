@@ -10,10 +10,10 @@ description: This tutorial provides with an introduction to deep learning framew
 
       Machine learning data computations are really huge. Caffe is a deep learning framework where the layers are clearly defined using a model,often used for image recognition. It also addresses the hardware requirements that are to be met as a result of the increased number of neural layers and their computations. This section deals with the fundementals of Caffe and a few worked out examples to ease your understanding.
     
-      - INSTALLATION GUIDE FOR CAFFE
+- INSTALLATION GUIDE FOR CAFFE
 
-      This section provides with a step by step instruction for installing caffe.
+  This section provides with a step by step instruction for installing caffe.
 
-      - IMPLEMENTATION USING CAFFE
+- IMPLEMENTATION USING CAFFE
 
-      This section primarily focusses on implementing a few examples using caffe.
+  This section primarily focusses on implementing a few examples using caffe.
