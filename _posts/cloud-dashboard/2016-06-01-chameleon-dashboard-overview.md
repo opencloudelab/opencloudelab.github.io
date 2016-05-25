@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Course 1: Chameleon Dashboard Overview
+title: Course 1 Chameleon Dashboard Overview
 categories: cloud-dashboard
 author: 
 description: We briefly go over all the features of the Chameleon Cloud dashboard, which is very similar to OpenStack's Horizon dashboard.
