@@ -3,7 +3,7 @@ layout: post
 title: Lab 1 Introduction to Kubernetes
 categories: Kubernetes
 author: Aqsa Fatima
-description: Introduction to Docker Orchestration
+description: Introduction to Docker Orchestration - Kubernetes Installation and set up guide.
 ---
 #### We followed, abridged, and skipped around the guide laid out at: 
 [https://docs.docker.com/](https://docs.docker.com/)
