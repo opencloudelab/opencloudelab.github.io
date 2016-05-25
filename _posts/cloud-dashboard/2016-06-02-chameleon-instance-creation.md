@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Course 2: Chameleon Instance Creation
+title: Course 2 Chameleon Instance Creation
 categories: cloud-dashboard
 author: 
 description: We go over the details of creating a simple Chameleon instance using the Chameleon dashboard.
