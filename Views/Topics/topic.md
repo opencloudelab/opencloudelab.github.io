@@ -23,7 +23,7 @@
 				<div ng-switch-when="swift_installation">
 					<div ng-include src="'/Views/Topics/swift_installation'"></div>
 				</div>
-				<div ng-switch-when="docker-containers">
+				<div ng-switch-when="docker_containers">
 					<div ng-include src="'/Views/Topics/docker-containers'"></div>
 				</div>
 				<div ng-switch-when="machine_learning">
