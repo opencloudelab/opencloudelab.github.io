@@ -3,7 +3,7 @@ layout: post
 title: Tensor Flow.  
 categories: Machine - Learning
 author: Mitha Ann Philip
-description: This is a tutorial that provides with information related to implementation using Tensor Flow
+description: This is a practical guide and introduction towards implementation using Tensor Flow
 ---
 
 
