@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lab 3 Docker Compose
-categories: Kubernetes
+categories: Integration
 author: Aqsa Fatima
 description: Introduction to Docker Compose - Installation and Use.
 ---
