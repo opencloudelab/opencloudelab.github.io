@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lab 1 Introduction to Docker Containers
+title: Lab 2 System Set Up for Docker Installation
 categories: docker-containers
 author: Aqsa Fatima
 description: Docker Installation Prerequisites
