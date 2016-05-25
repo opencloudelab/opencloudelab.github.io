@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lab 1 Introduction to Docker Containers
+title: Lab 3 Installing Docker Engine
 categories: docker-containers
 author: Aqsa Fatima
 description: Docker Installation
