@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Caffe.  
+title: Caffe 
 categories: caffe-for-deep-learning
 author: Mitha Ann Philip
 description: This tutorial provides with an introduction to deep learning framework and examples implemented using caffe.
