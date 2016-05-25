@@ -1,1 +1,17 @@
-placeholder
+- title: Coming soon
+  icon: <i class="fa fa-code-fork" aria-hidden="true"></i>
+  description: 
+  image: bla
+  link: href="/#/"
+
+- title:
+  icon: <i class="fa fa-download" aria-hidden="true"></i>
+  description: 
+  image:  bla
+  link: href="/#/"
+
+- title:
+  icon: <i class="fa fa-download" aria-hidden="true"></i>
+  description: 
+  image:  bla
+  link: href="/#/"
