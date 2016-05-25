@@ -8,10 +8,10 @@
   icon: <i class="fa fa-download" aria-hidden="true"></i>
   description: 
   image:  bla
-  link: href="/#/"
+  link: href="/#/topics/tensor_flow"
 
 - title: Caffe for Deep Learning
   icon: <i class="fa fa-download" aria-hidden="true"></i>
   description: 
   image:  bla
-  link: href="/#/"
+  link: href="/#/topics/caffe_for_deep_learning"
