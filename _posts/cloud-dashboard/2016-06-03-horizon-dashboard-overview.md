@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Course 3: Horizon Dashboard Overview
+title: Course 3 Horizon Dashboard Overview
 categories: cloud-dashboard
 author: 
 description: We give a brief overview of the OpenStack Horizon dashboard.
