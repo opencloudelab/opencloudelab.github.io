@@ -9,11 +9,11 @@ ul.mod {
 }
 </style>
 
-### Tensor Flow Video Lessons
+### Video Lessons
 <ul class='mod'>
 	{% for post in site.posts reversed %}
 
-		{% if post.categories contains 'machine-learning' %}
+		{% if post.categories contains 'caffe-for-deep-learning' %}
 		
 		<li>
 			<h4>	
