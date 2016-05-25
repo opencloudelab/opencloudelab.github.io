@@ -9,7 +9,7 @@ description: This is a practical guide and introduction towards implementation u
 
       Tensor Flow is an open source machine learning software library used to program the numerical computations that machine learning projects deal with. The computations are graphs in tensor flow. Deep Learning and Neural Network together works best for applications that involve image / speech recognition, natural language processing. This section below includes various topics that would help you define your own neural network model, activated using tensors in tensor flow. 
 
-      - WORKING WITH TENSOR FLOW
+      - INSTALLATION GUIDE FOR TENSOR FLOW
 
        This section deals with a step by step procedure to install tensor flow.      
 
