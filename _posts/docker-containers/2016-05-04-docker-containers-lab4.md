@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lab 5 Setting Up Demo Website - Host 1
+title: Lab 4 Setting Up Demo Website - Host 1
 categories: docker-containers
 author: Aqsa Fatima
 description: Introduction to Docker
