@@ -26,6 +26,9 @@
 				<div ng-switch-when="docker_containers">
 					<div ng-include src="'/Views/Topics/docker_containers'"></div>
 				</div>
+				<div ng-switch-when="Kubernetes">
+					<div ng-include src="'/Views/Topics/Kubernetes'"></div>
+				</div>
 				<div ng-switch-when="machine_learning">
 					<div ng-include src="'/Views/Topics/machine_learning'"></div>
 				</div>
