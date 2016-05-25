@@ -4,11 +4,11 @@
   image: bla
   link: href="/#/topics/machine_learning"
 
-- title: Tensor Flow for Machine Learning
-  icon: <i class="fa fa-download" aria-hidden="true"></i>
-  description: 
-  image: bla
-  link: href="/#/topics/tensor_flow"
+#- title: Tensor Flow for Machine Learning
+#  icon: <i class="fa fa-download" aria-hidden="true"></i>
+#  description: 
+#  image: bla
+#  link: href="/#/topics/tensor_flow"
 
 - title: Caffe for Deep Learning
   icon: <i class="fa fa-download" aria-hidden="true"></i>
