@@ -13,7 +13,7 @@ ul.mod {
 <ul class='mod'>
 	{% for post in site.posts reversed %}
 
-		{% if post.categories contains 'tensor-flow' %}
+		{% if post.categories contains 'machine-learning' %}
 		
 		<li>
 			<h4>	
