@@ -29,6 +29,12 @@
 				<div ng-switch-when="machine_learning">
 					<div ng-include src="'/Views/Topics/machine_learning'"></div>
 				</div>
+				<div ng-switch-when="tensor_flow">
+					<div ng-include src="'/Views/Topics/tensor-flow'"></div>
+				</div>
+				<div ng-switch-when="caffe_for_deep_learning">
+					<div ng-include src="'/Views/Topics/caffe_for_deep_learning'"></div>
+				</div>
 				<div ng-switch-when="internet_of_things">
 					<div ng-include src="'/Views/Topics/internet_of_things'"></div>
 				</div>
