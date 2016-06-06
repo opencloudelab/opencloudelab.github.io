@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Course 0 What is Ceph and Why to use it?  
+title: Course 1 What is Ceph and Why to use it?  
 categories: ceph-install
-author: 
+author: Swanand Mhalagi
 description: Introduction about ceph and it's advantages.
 ---
 
 * * *
 
-#### Course 0: What is Ceph and Why to use it?
+#### Course 1: What is Ceph and Why to use it?
 
 * * *
 
