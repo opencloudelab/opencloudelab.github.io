@@ -15,10 +15,6 @@
   icon: <i class="fa fa-download" aria-hidden="true"></i>
   description: 
   image:  bla
-  link: href="/#/topics/Integration"
+  link: href="/#"
   
-- title: Introduction to Tutum
-  icon: <i class="fa fa-download" aria-hidden="true"></i>
-  description: 
-  image:  bla
-  link: href="/#/topics/Tutum"
+
