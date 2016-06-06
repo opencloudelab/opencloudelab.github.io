@@ -6,6 +6,7 @@ author: Swanand Mhalagi
 description: Introduction about ceph and it's advantages.
 ---
 
+[More info about Ceph](http://docs.ceph.com/docs/master/start/quick-ceph-deploy/)
 
 CEPH is an open source distributed storage system, designed to have no single point of failure, it can scale to an infinite number of nodes, and nodes are not coupled with each other, while traditional storage systems have some components shared between controllers (cache, disks)
 
