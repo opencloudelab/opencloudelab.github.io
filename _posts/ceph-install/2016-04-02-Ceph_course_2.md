@@ -3,7 +3,7 @@ layout: post
 title: Course 2 Basic Packages Installation  
 categories: ceph-install
 author: Swanand Mhalagi
-description: We begin by installing some basic packages which act as prerequisites for Ceph installation.
+description: We begin by installing some packages for single node Ceph installation.
 ---
 
 [More info about Ceph](http://docs.ceph.com/docs/master/start/quick-ceph-deploy/)
