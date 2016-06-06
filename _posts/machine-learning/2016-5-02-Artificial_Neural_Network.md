@@ -16,3 +16,4 @@ description: This section provides an introduction to concepts on Neural Network
   neural network is modelled for application which involve classification or recognition. 
   
   This tutorial will focus on the basics of neural network and on how to train a neural network model.
+
