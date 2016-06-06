@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Course 3 Deploying Ceph 
+title: Course 4 Deploying Ceph 
 categories: ceph-install
 author: 
 description: Making file system and Deploying Ceph.
