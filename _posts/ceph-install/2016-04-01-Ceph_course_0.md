@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Course 1 What is Ceph and Why to use it?  
+title: Course 0 What is Ceph and Why to use it?  
 categories: 
 author: 
 description: Introduction about ceph and it's advantages.
@@ -8,7 +8,7 @@ description: Introduction about ceph and it's advantages.
 
 * * *
 
-#### Course 1: What is Ceph and Why to use it?
+#### Course 0: What is Ceph and Why to use it?
 
 * * *
 
