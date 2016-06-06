@@ -18,7 +18,7 @@ CEPH does not use technologies like RAID or Parity, redundancy is guaranteed usi
 ![alt text](https://raw.githubusercontent.com/opencloudelab/opencloudelab.github.io/master/_posts/ceph-install/ceph-image-1.png "ceph")
 
 
-                              [Image Source](http://www.ironnetworks.com/Ceph-Storage-Clusters)
+[Image Source](http://www.ironnetworks.com/Ceph-Storage-Clusters)
 
 
 
