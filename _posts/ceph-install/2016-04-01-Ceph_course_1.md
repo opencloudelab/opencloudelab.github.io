@@ -18,6 +18,7 @@ CEPH does not use technologies like RAID or Parity, redundancy is guaranteed usi
 ![alt text](https://raw.githubusercontent.com/opencloudelab/opencloudelab.github.io/master/_posts/ceph-install/ceph-image-1.png "ceph")
 
 
+                              [Image Source](http://www.ironnetworks.com/Ceph-Storage-Clusters)
 Each object typically includes the data itself, a variable amount of metadata, and a globally unique identifier.  Each file entering the cluster is saved in one or more objects and the object is saved multiple times in the cluster. The process is reversed when data needs to be accessed. Object, block and file storage delivers high performance, high scalability and high availability.
 
 
