@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Course 4 What is Ceph and Why to use it?  
-categories: 
+categories: ceph-install
 author: 
 description: Introduction about ceph and it's advantages.
 ---
