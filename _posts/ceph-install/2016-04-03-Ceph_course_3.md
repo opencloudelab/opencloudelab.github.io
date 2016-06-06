@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Course 2 Preparing Drives for Ceph Installation
+title: Course 3 Preparing Drives for Ceph Installation
 categories: ceph-install
 author: 
 description: Create partition on the drives.
