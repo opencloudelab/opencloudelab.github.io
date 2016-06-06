@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Course 1 Basic packages installation  
+title: Course 2 Basic packages installation  
 categories: ceph-install
 author: Swanand Mhalagi
 description: We begin by installing some basic packages which act as prerequisites for Ceph installation.
