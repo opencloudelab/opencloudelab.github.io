@@ -32,7 +32,7 @@ Launch tensor board :
 •Open a browser and navigate to   http: (server):6006
 
 ## Example 4: 
-### Objective of this program is to learn on slicing, a tensor tranformation. 
+### Objective of this program is to familiarize with tensor tranformation. 
 
 ## Example 5: 
 ### Logistic Regression 
