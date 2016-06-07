@@ -8,7 +8,7 @@ description: This is a guide contains an introduction on Tensor Flow.
 
 ## INTRODUCTION TO TENSOR FLOW
 
-This section will guide you to get an idea about tensor flow. The course is designed to provide you with an introduction to tensor flow, steps to install tensor flow, followed by a few practical examples that will help you understand how to define your own neural network model and activate them using tensors in tensor flow. 
+This section will guide you to get an idea about tensor flow. The course is will provide you with an introduction to tensor flow, steps to install tensor flow, followed by a few practical examples that will help you understand how to define your own neural network model and activate them using tensors in tensor flow. 
 
 ## Prerequisites
 Basic understanding of neural networks is assumed for this course. 
