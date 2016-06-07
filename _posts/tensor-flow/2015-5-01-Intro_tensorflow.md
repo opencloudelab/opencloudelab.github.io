@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tensor Flow  
+title: Lab 1 Tensor Flow  
 categories: tensor-flow
 author: Mitha Ann Philip
 description: This is a guide contains an introduction on Tensor Flow.
