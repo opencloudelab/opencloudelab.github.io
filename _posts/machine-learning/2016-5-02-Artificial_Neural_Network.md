@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Artificial Neural Networks
+title: Lab 2 Artificial Neural Networks
 categories: machine-learning
 author: Mitha Ann Philip
 description: This section provides an introduction to concepts on Neural Network.
