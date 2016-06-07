@@ -11,7 +11,7 @@ Machine learning is an intense area. It can invoke smarter and innovative produc
 
  The course will provide you with an introduction to tensor flow, steps to install tensor flow, followed by a few practical examples that will help you understand how to define your own neural network model and activate them using tensors in tensor flow. 
 
-The contents of this course contains information primarily based on the tutorial at www.tensorflow.org 
+The contents of this course is primarily based on the tutorial at www.tensorflow.org 
 
 ## Prerequisites
 Basic understanding of neural networks is assumed for this course. 
