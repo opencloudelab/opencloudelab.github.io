@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tensors in Tensor Flow  
+title: Lab 3 Tensors in Tensor Flow  
 categories: tensor-flow
 author: Mitha Ann Philip
 description: This is a practical guide with worked out examples that would help you familiarize with Tensor Flow.
