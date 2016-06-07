@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Digit Recognition using Tensor Flow  
+title: Lab 4 Digit Recognition using Tensor Flow  
 categories: tensor-flow
 author: Mitha Ann Philip
 description: This is a practical guide which implements a neural network model using Tensor Flow.
