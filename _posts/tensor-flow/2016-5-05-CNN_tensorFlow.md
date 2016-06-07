@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Convolutional Neural Network using Tensor Flow  
+title: Lab 5 Convolutional Neural Network using Tensor Flow  
 categories: tensor-flow
 author: Mitha Ann Philip
 description: This is a practical guide focussing on applying Convolutional Neural Network (CNN) to a neural network model.
