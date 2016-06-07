@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deep Learning Neural Network  
+title: Lab 6 Deep Learning Neural Network  
 categories: tensor-flow
 author: Mitha Ann Philip
 description: This tutorial introduces you towards Deep Learning Neural Network.
