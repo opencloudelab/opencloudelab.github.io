@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation steps for Tensor Flow  
+title: Lab 2 Installation steps for Tensor Flow  
 categories: tensor-flow
 author: Mitha Ann Philip
 description: This tutorial takes you through the installation steps to install Tensor Flow.
