@@ -3,7 +3,7 @@ layout: post
 title: Lab 3 Tensors in Tensor Flow  
 categories: tensor-flow
 author: Mitha Ann Philip
-description: This is a practical guide with worked out examples that would help you familiarize with Tensor Flow.
+description: Tensors are multidimensional arrays/list of values. Computations are carried out using tensors. This is a practical guide with worked out basic examples that would help you familiarize with Tensor Flow.
 ---
 ## Objective
 Tensors are used to represent data in tensor flow. Computation graph uses these tensors to do the computations. There are different 
