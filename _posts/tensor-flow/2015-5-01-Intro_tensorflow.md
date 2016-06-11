@@ -3,13 +3,11 @@ layout: post
 title: Lab 1 Tensor Flow  
 categories: tensor-flow
 author: Mitha Ann Philip
-description: This is a guide contains an introduction on Tensor Flow.
+description: Machine learning is an intense area. It can invoke smarter and innovative products for future technologies. Tensor Flow is one tool that provides a platform to make it practical. This is lab will provide an introduction on Tensor Flow.
 ---
 
-## INTRODUCTION TO TENSOR FLOW
-Machine learning is an intense area. It can invoke smarter and innovative products for future technologies. Tensor Flow is one tool that provides a platform to make it practical.
-
- The course will provide you with an introduction to tensor flow, steps to install tensor flow, followed by a few practical examples that will help you understand how to define your own neural network model and activate them using tensors in tensor flow. 
+## INTRODUCTION
+ Tensor Flow is Google's Artificial Intelligence Engine. The tensor flow provides a platform to execute your neural network model for your application. The course objective is to provide you with an introduction to tensor flow, steps to install tensor flow, followed by a few practical examples that will help you understand how to define your own neural network model and activate them using tensors in tensor flow. 
 
 The contents of this course is primarily based on the tutorial at www.tensorflow.org 
 
