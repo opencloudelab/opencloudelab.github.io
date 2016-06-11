@@ -3,7 +3,7 @@ layout: post
 title: Lab 2 Installation steps for Tensor Flow  
 categories: tensor-flow
 author: Mitha Ann Philip
-description: This tutorial takes you through the installation steps to install Tensor Flow.
+description: This tutorial will help you install Tensor Flow. The graphs in Tensor flow is generated using Tensor Board. The tutorial will also contain the steps to install tensor board as well. 
 ---
 ## TENSOR FLOW INSTALLATION
 This section deals with a step by step procedure to install tensor flow. 
