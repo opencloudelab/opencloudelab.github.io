@@ -3,11 +3,11 @@ layout: post
 title: Lab 4 Digit Recognition using Tensor Flow  
 categories: tensor-flow
 author: Mitha Ann Philip
-description: This is a practical guide which implements a neural network model using Tensor Flow.
+description: MNIST Digit Recognition is an introduction towards multiclass classification. The database used is MNIST, which contains handwritten images of digits. This is a practical guide which implements a neural network model using Tensor Flow to recognize the digits in the image and to classify them accordingly.
 ---
-## Objective
+## Introduction
 
-This section primarily focusses on understanding a neural network model using tensor flow. We would use the MNIST, a large dataset of handwritten digits for the purpose. MNIST digit recognition task is fundamental towards understanding-how to model a neural net using tensor flow. Our goal in this section would be to implement a neural model for the recognition process and to calculate the accuracy of our model. We have followed the tensor flow [tutorial](tensorflow.org).
+This section primarily focusses on understanding a neural network model using tensor flow. We would use the MNIST, a large dataset of 60,000 handwritten digit images for training the neural network model and 10,000 samples as test cases to test the neural network. MNIST digit recognition task is fundamental towards understanding-how to model a neural net using tensor flow. Our goal in this section would be to implement a neural model for the recognition process and to calculate the accuracy of our model. We have followed the tensor flow [tutorial](tensorflow.org).
 
 ## Prerequisite
 
