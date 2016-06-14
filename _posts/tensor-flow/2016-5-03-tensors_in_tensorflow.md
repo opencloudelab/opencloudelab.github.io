@@ -22,20 +22,7 @@ The objective of this program is to understand the basic structure of a simple t
 The objective is to familiarize on different types of tensor that can be used in tensor flow.
 
 ## Example 3: 
-### Steps to Generate tensor board
-
-Tensor Board provides a visualization of the model that you create. It deals with 2 types of connections: Control dependency(denoted using dotted lines) and Data dependency(denoted using solid lines). To record the variations produced by a particular function, provide them as inputs to scalar_summary ops with a tag name. Histogram_summary provides the distribution of an output variable from a layer. tf.merge_all_summaries will merge the summaries created within the program, which is then directed to a summary_writer. Specify a logdir for summary writer to write the events.
-
-Launch tensor board :
-•run the command :   tensorboard --logdir = /tmp/mnist_logs 
-
-•Open a browser and navigate to   http: (server):6006
-
-## Example 4: 
 ### Objective of this program is to familiarize with tensor tranformation. 
-
-## Example 5: 
-### Logistic Regression 
 
 
 
