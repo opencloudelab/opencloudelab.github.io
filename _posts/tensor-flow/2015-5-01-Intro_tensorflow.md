@@ -12,7 +12,7 @@ description: Machine learning is an intense area. It can invoke smarter and inno
 The contents of this course is primarily based on the tutorial at www.tensorflow.org 
 
 ## Prerequisites
-Basic understanding of neural networks is assumed for this course. 
+No Prequisites for this lab 
 
 ## Tensor Flow 
 
