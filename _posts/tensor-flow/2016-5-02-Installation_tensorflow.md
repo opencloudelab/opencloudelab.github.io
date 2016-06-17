@@ -25,6 +25,7 @@ sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/t
 
 #### Step 3: Install scipy, matplotlib packages 
 Scipy is an opensource software library for scientific calculations and matlplotlib is a python 2D library to work with images and high quality plots.
+
 ```ssh 
 sudo apt-get install python-scipy python-matplotlib git
 ```
@@ -41,8 +42,10 @@ git clone https://github.com/tensorflow/tensorflow.git
 sudo apt-get install nodejs nodejs-legacy npm
 ```
 Computations are represented in graphs in tensor flow. The graphs are visualised using tensor board.
+
 #### Step 6: Gulp Bower
 Gulp is a task runner that takes care of tasks that includes javascripts or CSSfiles. 
+
 ```ssh 
 sudo npm install -g gulp bower
 ```
