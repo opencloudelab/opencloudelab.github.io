@@ -22,7 +22,7 @@ A tensor flow program executes within a session. All the nodes that are created 
  Tensor flow allows has different types of tensors. Every node that is created in tensor flow is assigned an operation using the tensor flow commands. The objective is to familiarize on different types of tensor and also on a couple of commands in tensor flow.
 
 ## Example 3: 
-### Tensors are used to do computations in tensor flow. Every tensor is described usingObjective of this program is to familiarize with tensor tranformation. 
+### Tensors are used to do computations in tensor flow. Objective of this program is to familiarize with tensor tranformation. 
 
 
 
