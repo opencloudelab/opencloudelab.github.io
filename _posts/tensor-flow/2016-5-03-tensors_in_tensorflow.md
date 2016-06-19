@@ -13,16 +13,17 @@ using tensors in tensor flow.
 ## Prequisites
 We assume that tensor flow is installed successfully
 
-## Example 1: 
-### Welcome to Tensor Flow 
+### Example 1: 
+#### Welcome to Tensor Flow 
 A tensor flow program executes within a session. All the nodes that are created within a program is executed using the session. The output obtained will be contained within that session. The objective of this program is to understand the basic structure of a simple tensor flow program.
 
-##Example 2: 
-### Basic types of tensors and Commands
+### Example 2: 
+#### Basic types of tensors and Commands
  Tensor flow allows has different types of tensors. Every node that is created in tensor flow is assigned an operation using the tensor flow commands. The objective is to familiarize on different types of tensor and also on a couple of commands in tensor flow.
 
-## Example 3: 
-### Tensors are used to do computations in tensor flow. Objective of this program is to familiarize with tensor tranformation. 
+### Example 3: 
+#### Tensor tranformation
+Tensors are used to do computations in tensor flow. Every tensor is described using rank,shape and dimension. Objective of this program is to familiarize with tensors and tensor tranformation.
 
 
 
