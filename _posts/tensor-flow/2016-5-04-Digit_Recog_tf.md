@@ -16,9 +16,8 @@ Knowledge on neural networks and on basic tensor operations. We also assume that
 ### MNIST Digit Classification
 MNIST is a computer vision dataset which consist of 28 x 28 images of handwritten digits. MNIST has two main parts: Image of a handwritten digit "xs" and the corresponding label for the digits "ys" (ranging from 0 to 9). 
 The network model used to do the recognition using softmax is described in [tensor flow tutorial](https://www.tensorflow.org/versions/r0.9/tutorials/mnist/beginners/index.html)
-The model has 2 layers. Input layer, hidden layer and the output layer. The weighted inputs are added with the bias values and is fed as input to the hidden layer. This layer has the softmax function and the output is obtained in terms of probabilistic values which decides the group to which the input image belongs.
+The model has 2 layers. Input layer, hidden layer and the output layer. The weighted inputs are added with the bias values and is fed as input to the hidden layer. This layer has the softmax function and the output is obtained in terms of probabilistic values which decides the group to which the input image belongs. The tensorflow tutorial page has a schematic of the [network model](https://www.tensorflow.org/versions/r0.9/tutorials/mnist/beginners/index.html).
 
-![Neural Network Model](/_posts/tensor-flow/lab4_Img.png)
 
 #### TRAINING
 
