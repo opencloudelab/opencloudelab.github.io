@@ -28,7 +28,7 @@ The execution phase of a tensor flow program requires a session to be launched s
  - Random Tensor
  - Placeholder Tensor
  
-These tensors varies in its basic functionality. The objective of this program is to familiarize on different types of tensor and also on a couple of commands in tensor flow.
+These tensors varies in its basic functionality. Constant Tensors takes constant values. A variable tensor is considered as a storage tensor which holds the tensor values. A variable tensor is associated with the initialization command. At the time of variable tensor creation, it is always initialised with zeros. Once the initialization command is run using the session, every variable tensor gets populated with the value you want it to be populated. A random tensor is that which populates a node with random values. There are many random tensor commands in tensor flow to generate random tensors. A placeholder tensor is always fed with the values for it to compute. feed_dict argument is used along with session run command to populate a place holder tensor value. Ojective of this program is to familiarize on different types of tensor and also on a couple of commands in tensor flow.
 
 ### Example 3: 
 
