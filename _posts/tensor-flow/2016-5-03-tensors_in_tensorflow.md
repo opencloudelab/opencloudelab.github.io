@@ -54,8 +54,8 @@ To generate graph using tensor board :
                 ```
 
  *Step 3*:  Navigate to :
-               ```ssh 
+                
                http: //<server IP address>:6006
-               ```
+               
 
 
