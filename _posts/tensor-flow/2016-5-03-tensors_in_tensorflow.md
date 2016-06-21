@@ -32,7 +32,7 @@ These tensors varies in its basic functionality. The objective of this program i
 
 ### Example 3: 
 
-#### Tensor tranformation
+#### Tensor Tranformation
 
 Tensors are used to do computations in tensor flow. Every tensor is described using rank,shape and type. There are varied tensor flow commands like slice that can be used to alter the shape of the input tensor. Slice command will slice a part of the tensor from the input tensor. Objective of this program is to familiarize with tensors and also tensor tranformation slice command.
 
