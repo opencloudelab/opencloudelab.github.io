@@ -36,6 +36,26 @@ These tensors varies in its basic functionality. The objective of this program i
 
 Tensors are used to do computations in tensor flow. Every tensor is described using rank,shape and type. There are varied tensor flow commands like slice that can be used to alter the shape of the input tensor. Slice command will slice a part of the tensor from the input tensor. Objective of this program is to familiarize with tensors and also tensor tranformation slice command.
 
+### Example 4: 
 
+#### Tensor Board
+
+Tensor Board provides a visualization of the model that you create. It deals with 2 types of connections: Control dependency(denoted using dotted lines) and Data dependency(denoted using solid lines). To record the variations produced by a particular function, provide them as inputs to scalar summary ops with a tag name. Histogram summary provides the distribution of an output variable from a layer. tf.merge_all_summaries will merge the summaries created within the program, which is then directed to a summary_writer. Using the below command we specify a logdir for summary writer to write the events. 
+
+To generate graph using tensor board : 
+
+
+ *Step 1*: Execute the tensor flow program
+
+ *Step 2*: Run the command:
+ 
+               ``` ssh
+                tensorboard --logdir = /tmp/mnist_logs 
+                ```
+
+ *Step 3*:  Navigate to :
+               ```ssh 
+               http: //<server IP address>:6006
+               ```
 
 
