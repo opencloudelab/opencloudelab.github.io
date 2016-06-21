@@ -49,7 +49,7 @@ To generate graph using tensor board :
 
  *Step 2*: Run the command:
  
-               
+                
                 tensorboard --logdir = /tmp/mnist_logs 
                 
 
