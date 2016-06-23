@@ -5,7 +5,7 @@ categories: tensor-flow
 author: Mitha Ann Philip
 description: This tutorial will help you install Tensor Flow. The graphs in Tensor flow is generated using Tensor Board. The tutorial will also contain the steps to install tensor board as well. 
 ---
-## TENSOR FLOW INSTALLATION
+## Tensor Flow Installation
 The different way to install tensor flow are provided (here)[https://www.tensorflow.org/versions/r0.9/get_started/os_setup.html#requirements].
 This section deals with a step by step procedure to install tensor flow. 
 
