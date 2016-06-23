@@ -36,12 +36,13 @@ sudo apt-get install python-scipy python-matplotlib git
 git clone https://github.com/tensorflow/tensorflow.git 
 ```
 
+Computations are represented in graphs in tensor flow. The graphs are visualised using tensor board.
+
 #### *Step 5*: Install Node.js-legacy npm package manager
 
 ```ssh 
 sudo apt-get install nodejs nodejs-legacy npm
 ```
-Computations are represented in graphs in tensor flow. The graphs are visualised using tensor board.
 
 #### *Step 6*: Gulp Bower
 Gulp is a task runner that takes care of tasks that includes javascripts or CSSfiles. 
@@ -50,7 +51,11 @@ Gulp is a task runner that takes care of tasks that includes javascripts or CSSf
 sudo npm install -g gulp bower
 ```
 
-#### *Step 7*: Go to directory:  tensorflow/tensorflow/tensorboard/
+#### *Step 7*: Go to directory:
+
+```ssh
+cd tensorflow/tensorflow/tensorboard/
+```
 
 #### *Step 8*: npm install
 NPM is Node Package Manager. It acts as a dependency manager.
