@@ -7,10 +7,10 @@ description: Here we will practice using keyston features through Horizon dashbo
 ---
 
 
-#Module 4.a
-#Horizon Dashboard - Keystone
+# Module 4.a
+# Horizon Dashboard - Keystone
 
-##Table of Contents
+## Table of Contents
 
 Horizon Dashboard - Keystone
 Accessing the Horizon Dashboard
@@ -27,17 +27,17 @@ Get User
 List User
 Summary
 
-###Slide 1:
+### Slide 1:
 Welcome to the tutorial on Keystone using theHorizon dashboard. My name is Gonzalo De La Torre and I will be training you how to access the Admin features provided by the Keystone Service through the Horizon Dashboard.
 
-###Slide 2:
+### Slide 2:
 The contents to be covered in this tutorial include:
 
-###Slide 3:
+### Slide 3:
 Prerequisites:
 You must have gone through the Introduction to Cloud Computing Lab before starting this one. 
 
-###Slide 4:
+### Slide 4:
 Let us begin with a brief introduction: 
 
 Keystone is the identity service in charge of providing authentication and authorization to access the openstack services. Horizon, which is the OpenStack dashboard project, it is a canonical representation that allows you to access the openstack services like Nova, Neutron, Swift, Keystone through a web based user interface. It allows the admin and other users to access and manage the functional components using just a web browser.
@@ -55,7 +55,7 @@ There is Consistency across the application with respect to the visual paradigm 
 The Horizon Dashboard is also Stable. The use of core classes and reusable templates creates an implicit requirement that there has to be backward compatibility in case of a change.
 
 
-##Horizon Dahboard:
+## Horizon Dahboard:
 Now let us get familiarised with Horizon Dashboard:
 
 As we have discussed before,  keystone OpenStack’s identity service. The authentication and authorization can be done using a combination of users, roles, tenants or projects and domain.
@@ -123,7 +123,7 @@ In Project Members, you can add members using the + icon beside every user. The 
 In Quota tab, the related fields can be edited and saved using the save button. 
 
 
-##Users and Roles
+## Users and Roles
 	Create User
 
 	Click on the Create User button available on the top right corner of the 
@@ -136,7 +136,7 @@ Once the details are filled in, click on Create User button.
 
 To confirm the user creation, see for the ‘Success: <user> was created successfully’ message on the top right corner of the screen . Now you can find the user among the list of others users in the screen
 
-###Delete User
+### Delete User
 	To delete a user from the list, select the user to be deleted from the list in the User 
            Screen by clicking on the check box. Click on the Delete User button on the top right corner of the screen to delete the selected user. 
 
@@ -145,7 +145,7 @@ The resulting pop up screen will ask you to confirm the user name that you wish 
 
 Once deleted, the action can be confirmed by checking for the success message that appears on the top right corner. 
  
-###Get User
+### Get User
 In this section we will see how to see the details of a particular user. 
 	Follow the navigation :
  In Identity→ Users 
@@ -153,21 +153,21 @@ Will take you to the list of users. So here if you notice, all the users have a 
  To see the details of a particular user, keep cursor on the user name you wish to view.Using the hand symbol, click on the user name. The following screen will show the details of the user (demoUser).
 
 
-###List User
+### List User
 List user screen will provide you with the list of currently available users. 
 	You can get to the list of users by following the navigation: 
 	Within demo project; Identity → Users 
 The list user screen has information like User Name which is the name of the user, and then Email of the user, a unique User ID, it has information whether the user is Enabled or disabled and it also have an Action field with options for you to edit the user.
 
 Now let us see how to edit a user.
-###Edit User
+### Edit User
 	To update/edit the user details, click on the edit button on the action column of the user name. The Edit button allows you to edit the username, email, and primary project.
 
 
  The drop down can be accessed to edit the status of the user, the password for the user and also Delete a user. 
 
-###Summary
+### Summary
 The keystone dashboard provides a web based user interface for openstack services. It provides with an interface that provides access information on the most important components of keystone, that are required for the management of users, roles, tenants and services.
 
-##References
+## References
 http://docs.openstack.org
